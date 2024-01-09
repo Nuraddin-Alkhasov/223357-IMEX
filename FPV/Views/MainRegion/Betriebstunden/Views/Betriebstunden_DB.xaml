@@ -1,0 +1,88 @@
+﻿<vw:View x:Class="HMI.Views.MainRegion.Betriebstunden.Betriebstunden_DB"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+     Width="1840" Height="1000" Background="{DynamicResource MainViewBackgroundBrush}">
+
+    <Grid x:Name="LayoutRoot" Background="{DynamicResource MainViewBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="4">
+            <Grid.Effect>
+                <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+            </Grid.Effect>
+            <Border Background="{DynamicResource FP_Blue_Gradient}">
+                <Border.Effect>
+                    <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+                </Border.Effect>
+                <vw:TextBlock x:Name="header" LocalizableText="@Betriebstunden.Text1" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="48" Margin="50,0,0,0" />
+            </Border>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+            <Border Background="{DynamicResource FP_Dark}" CornerRadius="10" Height="370" Margin="70,0,70,0" >
+                <Border.Effect>
+                    <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+                </Border.Effect>
+            </Border>
+            <Border Background="{DynamicResource MainViewBackgroundBrush}" CornerRadius="10" Height="340" Margin="85,0,85,0" />
+            <vw:ScrollViewer  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" PanningMode="HorizontalOnly" Margin="85,0,85,0" >
+                <StackPanel Orientation="Horizontal" >
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="70,0,0,0" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@HandMenu.Text35"  SymbolMargin="0,0,0,20" Symbol="{DynamicResource HM_In}" Click="NavigationButton_In" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@HandMenu.Text40"  SymbolMargin="0,0,0,20" Margin="30,0,0,0" Symbol="{DynamicResource HM_Transport}" Grid.Row="1" Click="NavigationButton_C" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@HandMenu.Text39"  SymbolMargin="0,0,0,20" Margin="30,0,70,0" Symbol="{DynamicResource HM_Out}" Click="NavigationButton_Out"/>
+                </StackPanel>
+            </vw:ScrollViewer>
+            <Border Background="{DynamicResource HM_Opacity_RtoL}" HorizontalAlignment="Left" Width="80" Height="340" Margin="85,0,0,0" CornerRadius="10,0,0,10"/>
+            <Border Background="{DynamicResource HM_Opacity_LtoR}" HorizontalAlignment="Right" Width="80" Height="340" Margin="0,0,85,0" CornerRadius="0,10,10,0"/>
+        </Grid>
+        <Grid Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2">
+            <Border Background="{DynamicResource FP_Dark}" CornerRadius="10" Height="370" Margin="70,0,70,0" >
+                <Border.Effect>
+                    <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+                </Border.Effect>
+            </Border>
+            <Border Background="{DynamicResource MainViewBackgroundBrush}" CornerRadius="10" Height="340" Margin="85,0,85,0" />
+            <vw:ScrollViewer  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" PanningMode="HorizontalOnly" Margin="85,0,85,0" >
+                <StackPanel Orientation="Horizontal" >
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_LGO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text13"  SymbolMargin="0,0,0,20" Margin="70,0,0,0" Click="NavigationButton_O" Tag="LGO1" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320"  HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_LGO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text14"  SymbolMargin="0,0,0,20" Margin="30,0,0,0" Click="NavigationButton_O" Tag="LGO2" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_LGO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text15"  SymbolMargin="0,0,0,20" Margin="30,0,70,0" Click="NavigationButton_O" Tag="LGO3" AuthorizationRight="OperatingTime"/>
+                </StackPanel>
+            </vw:ScrollViewer>
+            <Border Background="{DynamicResource HM_Opacity_RtoL}" HorizontalAlignment="Left" Width="80" Height="340" Margin="85,0,0,0" CornerRadius="10,0,0,10"/>
+            <Border Background="{DynamicResource HM_Opacity_LtoR}" HorizontalAlignment="Right" Width="80" Height="340" Margin="0,0,85,0" CornerRadius="0,10,10,0"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.ColumnSpan="3">
+            <Border Background="{DynamicResource FP_Dark}" CornerRadius="10" Height="370" Margin="70,0,70,0">
+                <Border.Effect>
+                    <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+                </Border.Effect>
+            </Border>
+            <Border Background="{DynamicResource MainViewBackgroundBrush}" CornerRadius="10" Height="340" Margin="85,0,85,0"/>
+            <vw:ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" PanningMode="HorizontalOnly" Margin="85,0,85,0">
+                <StackPanel Orientation="Horizontal" >
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text6"  SymbolMargin="0,0,0,20" Margin="70,0,0,0" Click="NavigationButton_O" Tag="ALO1" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text7"  SymbolMargin="0,0,0,20" Margin="30,0,0,0" Click="NavigationButton_O" Tag="ALO2" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text8"  SymbolMargin="0,0,0,20" Margin="30,0,0,0" Click="NavigationButton_O" Tag="ALO3" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text9"  SymbolMargin="0,0,0,20" Margin="30,0,0,0" Click="NavigationButton_O" Tag="ALO4" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text10"  SymbolMargin="0,0,0,20" Margin="30,0,0,0" Click="NavigationButton_O" Tag="ALO5" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text11"  SymbolMargin="0,0,0,20" Margin="30,0,0,0" Click="NavigationButton_O" Tag="ALO6" AuthorizationRight="OperatingTime"/>
+                    <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text12"  SymbolMargin="0,0,0,20" Margin="30,0,70,0" Click="NavigationButton_O" Tag="ALO7" AuthorizationRight="OperatingTime"/>
+                </StackPanel>
+            </vw:ScrollViewer>
+            <Border Background="{DynamicResource HM_Opacity_RtoL}" HorizontalAlignment="Left" Width="80" Height="340"  Margin="85,0,0,0" CornerRadius="10,0,0,10"/>
+            <Border Background="{DynamicResource HM_Opacity_LtoR}" HorizontalAlignment="Right" Width="80" Height="340"  Margin="0,0,85,0" CornerRadius="0,10,10,0"/>
+        </Grid>
+        <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource FP_GrayButton_HM}" LocalizableText="@Betriebstunden.Text25"  SymbolMargin="0,0,0,20" Symbol="{DynamicResource B_Ventilator}" Grid.Row="2" Grid.Column="3" Click="NavigationButton_A" AuthorizationRight="OperatingTime"/>
+
+    </Grid>
+</vw:View>

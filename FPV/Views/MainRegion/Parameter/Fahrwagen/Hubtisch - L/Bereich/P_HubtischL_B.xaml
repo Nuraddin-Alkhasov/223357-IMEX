@@ -1,0 +1,24 @@
+﻿<vw:View 
+    x:Class="HMI.Parameter.Fahrwagen.P_HubtischL_B"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+    Width="580" >
+
+    <vw:GroupBox  Style="{DynamicResource GroupBoxStyle}" Margin="10" LocalizableHeaderText="@Parameter.Text22" Background="{DynamicResource FP_Yellow}">
+        <StackPanel>
+            <vw:NumericVarOut Width="80" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-38,50,0" FontSize="14" LocalizableLabelText="@Parameter.Text3" LocalizableUnitText="@Einheiten.mm" Foreground="White" Background="{DynamicResource FP_LightGreen}" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Istwerte.Hubtsich.Aktuelle Pos in mm" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text24" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Freigabe Türe.Obergrenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text25" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Freigabe Türe.Untergenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text26" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Charge aufnehmen.Obergrenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text27" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Charge aufnehmen.Untergenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text28" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Übergabe.Obergrenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text29" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Übergabe.Untergenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text30" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Charge abegben.Obergrenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text31" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Ofen Charge abegben.Untergenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text73" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Luftabschrekung Schieber öffnen.Obergrenze" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,10" FontSize="14" LocalizableLabelText="@Parameter.Text74" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Parameter.Bereiche.Luftabschrekung Schieber öffnen.Untergenze" FormatString="{}0.0"/>
+
+        </StackPanel>
+    </vw:GroupBox>
+</vw:View>

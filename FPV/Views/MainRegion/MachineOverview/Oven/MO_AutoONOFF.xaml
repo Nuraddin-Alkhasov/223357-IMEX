@@ -1,0 +1,142 @@
+﻿<vw:View 
+    x:Class="HMI.Views.MainRegion.MachineOverview.MO_AutoONOFF"
+          
+	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	        xmlns:vw="http://inosoft.com/visiwin7" 
+	        Width="1920" Height="1080" Background="{DynamicResource DialogSurroundBrush}" IsVisibleChanged="View_IsVisibleChanged" >
+    <Grid>
+        <vw:Button Background="Transparent" BorderThickness="0" Click="CancelButton_Click"/>
+
+        <Border Width="720" Height="845" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Black" BorderThickness="1" Background="{DynamicResource FP_Dark}" CornerRadius="5">
+            <Border.Effect>
+                <DropShadowEffect Color="{DynamicResource ShadowDarkBottomColor}" />
+            </Border.Effect>
+            <Grid Margin="10,0,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="60" />
+                </Grid.RowDefinitions>
+                <vw:TextBlock x:Name="HeaderText" LocalizableText="@Zeitschaltuhr.Text1" VerticalAlignment="Center" Foreground="White" FontSize="16" FontWeight="Bold" />
+                <vw:Button x:Name="CancelButton" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{DynamicResource CloseButton}" Width="60" Height="40" Text="X" Margin="0,-1,0,0" Click="CancelButton_Click"/>
+
+                <Border Grid.Row="1" CornerRadius="5" Background="{StaticResource MainViewBackgroundBrush}" >
+                    <Grid Margin="0,0,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <vw:TextBlock Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableText="@Zeitschaltuhr.Text2" FontSize="16" FontWeight="Bold" Width="200" Height="25" TextAlignment="Center"/>
+                            <vw:TextBlock Margin="240,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableText="@Zeitschaltuhr.Text5" FontSize="16" FontWeight="Bold" Width="200" Height="25" TextAlignment="Center"/>
+                            <vw:TextBlock Margin="490,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableText="@Zeitschaltuhr.Text4" FontSize="16" FontWeight="Bold" Width="146" Height="25" TextAlignment="Center" />
+                        </Grid>
+                        <StackPanel Orientation="Horizontal" Grid.Row="1">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[1].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[1].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[1].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[1].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="2">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[2].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[2].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[2].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[2].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="3">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[3].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[3].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[3].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[3].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="4">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[4].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[4].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[4].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[4].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="5">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[5].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[5].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[5].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[5].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="6">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[6].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[6].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[6].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[6].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="7">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[7].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[7].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[7].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[7].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="8">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[8].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[8].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[8].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[8].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="9">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[9].DayOfWeek"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[9].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[9].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[9].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="10">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[10].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[10].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[10].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[10].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="11">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[11].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[11].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[11].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[11].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="12">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[12].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[12].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[12].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[12].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="13">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[13].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[13].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[13].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[13].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Grid.Row="14">
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Weekday_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[14].DayOfWeek" AuthorizationRight="Timer"/>
+                            <vw:ComboBox Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" StateList="{DynamicResource Funktion_VW}" Margin="20,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[14].Function" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" LocalizableUnitText="@Einheiten.Stunden" TextAlignment="Center" Text="" RawLimitMax="23" Margin="50,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[14].Hour" AuthorizationRight="Timer"/>
+                            <vw:NumericVarIn Width="56" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top"  LocalizableUnitText="@Einheiten.Min" Text="" TextAlignment="Center" RawLimitMax="59" Margin="35,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.TimerSwitcher[14].Minute" AuthorizationRight="Timer"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+                <vw:Button Grid.Row="2" x:Name="LeftButton"  Width="160" Height="40" HorizontalAlignment="Left" LocalizableText="@Tasten.Ein" Style="{DynamicResource FP_BlueButton_v2}" Click="LeftButton_Click" IsEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.isOn, Converter={StaticResource BoolToEnConverter0}}" AuthorizationRight="Timer"  />
+                <vw:Button Grid.Row="2" x:Name="RightButton"  Width="160" Height="40" HorizontalAlignment="Right"  LocalizableText="@Tasten.Aus" Style="{DynamicResource FP_RedButton_v2}" Click="RightButton_Click" IsEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Zeitschaltuhr.isOn}" AuthorizationRight="Timer"  />
+            </Grid>
+        </Border>
+
+    </Grid>
+
+
+</vw:View>

@@ -1,0 +1,79 @@
+﻿<vw:View x:Class="HMI.Handmenu.Handmenu_DB"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+    Width="1840" Height="1000" Background="{DynamicResource MainViewBackgroundBrush}">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="4">
+            <Grid.Effect>
+                <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+            </Grid.Effect>
+            <Border Background="{DynamicResource FP_Blue_Gradient}">
+                <Border.Effect>
+                    <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+                </Border.Effect>
+                <vw:TextBlock x:Name="header" LocalizableText="@HandMenu.Text44" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="48" Margin="50,0,0,0" />
+            </Border>
+        </Grid>
+        <Border Background="{DynamicResource FP_Dark}" CornerRadius="10" Grid.Row="2" Grid.ColumnSpan="3" Height="370" Margin="70,0,70,0">
+            <Border.Effect>
+                <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+            </Border.Effect>
+        </Border>
+        <Border Background="{DynamicResource MainViewBackgroundBrush}" CornerRadius="10" Grid.Row="2" Grid.ColumnSpan="3" Height="340" Margin="85,0,85,0"/>
+        <vw:ScrollViewer Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" PanningMode="HorizontalOnly" Margin="85,0,85,0">
+            <StackPanel Orientation="Horizontal" >
+                <vw:NavigationButton Width="60" Height="320" Background="Transparent" BorderThickness="0"/>
+                <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_ALO1_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text7"  SymbolMargin="0,0,0,20" Margin="10,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_ALO2_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text8"  SymbolMargin="0,0,0,20" Margin="30,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_ALO3_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text9"  SymbolMargin="0,0,0,20" Margin="30,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_ALO4_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text10"  SymbolMargin="0,0,0,20" Margin="30,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_ALO5_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text11"  SymbolMargin="0,0,0,20" Margin="30,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_ALO6_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text12"  SymbolMargin="0,0,0,20" Margin="30,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_ALO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_ALO7_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text13"  SymbolMargin="0,0,0,20" Margin="30,0,10,0" />
+                <vw:NavigationButton Width="60" Height="320" Background="Transparent" BorderThickness="0"/>
+            </StackPanel>
+        </vw:ScrollViewer>
+        <Border Background="{DynamicResource HM_Opacity_RtoL}" HorizontalAlignment="Left" Width="80" Height="340"  Grid.Row="2" Margin="85,0,0,0" CornerRadius="10,0,0,10"/>
+        <Border Background="{DynamicResource HM_Opacity_LtoR}" HorizontalAlignment="Right" Width="80" Height="340"  Grid.Row="2" Grid.Column="2" Margin="0,0,85,0" CornerRadius="0,10,10,0"/>
+        <Border Background="{DynamicResource FP_Dark}" CornerRadius="10" Grid.Column="2" Grid.ColumnSpan="2" Height="370" Margin="70,0,70,0" Grid.Row="1">
+            <Border.Effect>
+                <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+            </Border.Effect>
+        </Border>
+        <Border Background="{DynamicResource MainViewBackgroundBrush}" CornerRadius="10" Grid.Column="2" Grid.ColumnSpan="2" Height="340" Margin="85,0,85,0" Grid.Row="1"/>
+
+        <vw:ScrollViewer   Grid.Column="2" Grid.ColumnSpan="2" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" PanningMode="HorizontalOnly" Margin="85,0,85,0" Grid.Row="1">
+            <StackPanel Orientation="Horizontal" >
+                <vw:NavigationButton Width="60" Height="320" Background="Transparent" BorderThickness="0"/>
+                <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_LGO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_LGO1_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text14"  SymbolMargin="0,0,0,20" Margin="10,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_LGO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_LGO2_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text15"  SymbolMargin="0,0,0,20" Margin="30,0,0,0"/>
+                <vw:NavigationButton Width="320" Height="320" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Symbol="{DynamicResource R_LGO}" Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_LGO3_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text16"  SymbolMargin="0,0,0,20" Margin="30,0,10,0"/>
+                <vw:NavigationButton Width="60" Height="320" Background="Transparent" BorderThickness="0"/>
+            </StackPanel>
+
+        </vw:ScrollViewer>
+        <Border Background="{DynamicResource HM_Opacity_RtoL}" HorizontalAlignment="Left" Width="80" Height="340"  Grid.Column="2" Margin="85,0,0,0" CornerRadius="10,0,0,10" Grid.Row="1"/>
+        <Border Background="{DynamicResource HM_Opacity_LtoR}" HorizontalAlignment="Right" Width="80" Height="340"  Grid.Column="3" Margin="0,0,85,0" CornerRadius="0,10,10,0" Grid.Row="1"/>
+
+
+        <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_In_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text35"  SymbolMargin="0,0,0,20" Symbol="{DynamicResource HM_In}" Grid.Row="1"/>
+        <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_Out_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text39"  SymbolMargin="0,0,0,20" Grid.Row="2" Grid.Column="3" Symbol="{DynamicResource HM_Out}"/>
+        <vw:NavigationButton Width="320" Height="320" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource FP_GrayButton_HM}" ViewName="H_Fahrwagen_M_PN" RegionName="MainRegion" AuthorizationRight="ManualDrive" LocalizableText="@HandMenu.Text40"  SymbolMargin="0,0,0,20" Grid.Column="1" Symbol="{DynamicResource HM_Transport}" Grid.Row="1"/>
+
+
+
+    </Grid>
+</vw:View>

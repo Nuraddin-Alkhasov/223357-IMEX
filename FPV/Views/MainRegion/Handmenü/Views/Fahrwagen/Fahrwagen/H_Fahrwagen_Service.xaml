@@ -1,0 +1,23 @@
+﻿<vw:View x:Class="HMI.Handmenu.Fahrwagen.H_Fahrwagen_Service"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+    Width="1840" Height="890" Background="{DynamicResource MainViewBackgroundBrush}">
+
+    <Grid x:Name="LayoutRoot" >
+        <vw:Key Width="160" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource FP_BlueButton}" LocalizableText="@HandMenu.Referenzieren" Click="Key_Click" AuthorizationRight="Service"/>
+        <vw:NumericVarOut Width="160" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-150,0,0" LocalizableLabelText="@HandMenu.Ist" LocalizableUnitText="@Einheiten.mm" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Fahrwagen.Aktuelle Pos in mm" FormatString="{}0.0"/>
+        <Grid x:Name="NR" Visibility="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Hubtisch Sonderrecht, Converter={StaticResource IntToVisConverter0}}" >
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,160,0,0" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen+" AuthorizationRight="Service" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen +"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,320,160" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen-schnell" AuthorizationRight="Service" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen - schnell"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="320,0,0,160" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen+schnell" AuthorizationRight="Service" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen + schnell"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,160,320,0" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen-" AuthorizationRight="Service" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen -"/>
+        </Grid>
+        <Grid x:Name="SR" Visibility="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Hubtisch Sonderrecht, Converter={StaticResource IntToVisConverter1}}" >
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,160,0,0" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen+" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen +" AuthorizationRight="CarriageSpecialRight" Tag="T+" Click="Key_Click_1"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,320,160" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen-schnell"  VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen - schnell" AuthorizationRight="CarriageSpecialRight" Tag="T--" Click="Key_Click_1"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="320,0,0,160" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen+schnell" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen + schnell" AuthorizationRight="CarriageSpecialRight" Tag="T++" Click="Key_Click_1"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,160,320,0" KeyMode="KeyMode" Style="{DynamicResource FP_RedButton}" LocalizableText="@Tasten.Tippen-" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Tippen -" AuthorizationRight="CarriageSpecialRight" Tag="T-" Click="Key_Click_1"/>
+        </Grid>
+    </Grid>
+</vw:View>

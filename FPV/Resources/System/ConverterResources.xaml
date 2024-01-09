@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vw="http://inosoft.com/visiwin7"
+                    xmlns:vw1="clr-namespace:HMI.Converter">
+
+    <vw:ValueToStateBrushConverter x:Key="ValueToStateBrushConverter"/>
+    <vw:ValueToStateSymbolConverter x:Key="ValueToStateSymbolConverter"/>
+    <vw:ValueToStateTextConverter x:Key="ValueToStateTextConverter"/>
+    <vw1:BoolToBlinkConverterDS x:Key="BoolToBlinkConverterDS"/>
+    <vw1:BoolToVisConverter0 x:Key="BoolToVisConverter0"/>
+    <vw1:BoolToVisConverter1 x:Key="BoolToVisConverter1"/>
+    <vw1:IntToBlinkConverter x:Key="IntToBlinkConverter"/>
+    <vw1:IntToBlinkConverterMOF x:Key="IntToBlinkConverterMOF"/>
+    <vw1:BoolToBlinkConverter x:Key="BoolToBlinkConverter"/>
+    <vw1:IntToVisConverter0 x:Key="IntToVisConverter0"/>
+    <vw1:IntToVisConverter1 x:Key="IntToVisConverter1"/>
+    <vw1:IntToVisConverter2 x:Key="IntToVisConverter2"/>
+    <vw1:TestConv x:Key="TestConv"/>
+    <vw1:IntToEnabledConverter x:Key="IntToEnabledConverter"/>
+    
+    <vw1:IntToVisConverterOP x:Key="IntToVisConverterOP"/>
+    <vw1:IntToColorConverter x:Key="IntToColorConverter"/>
+    <vw1:BoolToEnConverter0 x:Key="BoolToEnConverter0"/>
+    
+</ResourceDictionary>

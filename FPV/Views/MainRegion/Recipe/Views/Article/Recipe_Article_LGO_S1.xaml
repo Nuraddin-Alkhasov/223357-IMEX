@@ -1,0 +1,42 @@
+﻿<vw:View 
+        x:Class="HMI.Views.MainRegion.Recipe.Recipe_Article_LGO_S1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vw="http://inosoft.com/visiwin7"
+        Width="996" Height="236" >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <vw:RadioButton Style="{DynamicResource RadioButtonStyle_v2}" LocalizableLabelText="@RecipeSystem.View.Grid.Text29"  Grid.Row="2"  Margin="10">
+            <Grid Margin="0,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <vw:NumericVarIn Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text7" LocalizableUnitText="@Einheiten.grad_C" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_1.Temperatur" AuthorizationRight="RecipeManagement"/>
+                <vw:NumericVarIn Grid.Row="1" Width="60" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text8" LocalizableUnitText="@Einheiten.Stunden" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="240,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_1.Aufheizzeit.Std" AuthorizationRight="RecipeManagement" />
+                <vw:NumericVarIn Grid.Row="1" Width="60" Height="40" HorizontalAlignment="Right" FontSize="14" LocalizableUnitText="@Einheiten.Min" Grid.Column="1" Margin="40,0,70,0" VerticalAlignment="Center" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_1.Aufheizzeit.Min" AuthorizationRight="RecipeManagement"/>
+                <vw:NumericVarIn Grid.Row="2" Width="60" Height="40" HorizontalAlignment="Left" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text9" LocalizableUnitText="@Einheiten.Stunden" VerticalAlignment="Center" Margin="240,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_1.Haltezeit.Std" AuthorizationRight="RecipeManagement" />
+                <vw:NumericVarIn Grid.Row="2" Width="60" Height="40" HorizontalAlignment="Right" Margin="0,0,70,0" FontSize="14" LocalizableUnitText="@Einheiten.Min" Grid.Column="1" VerticalAlignment="Center" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_1.Haltezeit.Min" AuthorizationRight="RecipeManagement" />
+            </Grid>
+        </vw:RadioButton>
+        <vw:RadioButton Style="{DynamicResource RadioButtonStyle_v2}" LocalizableLabelText="@RecipeSystem.View.Grid.Text30" Margin="10" Grid.Column="1" Grid.Row="2">
+            <Grid Margin="0,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <vw:NumericVarIn Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text11" LocalizableUnitText="@Einheiten.grad_C" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_2.Temperatur" AuthorizationRight="RecipeManagement"/>
+                <vw:NumericVarIn Grid.Row="1" Width="60" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text12" LocalizableUnitText="@Einheiten.Stunden" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="240,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_2.Aufheizzeit.Std" AuthorizationRight="RecipeManagement" />
+                <vw:NumericVarIn Grid.Row="1" Width="60" Height="40" HorizontalAlignment="Right" FontSize="14" LocalizableUnitText="@Einheiten.Min" Grid.Column="1" Margin="40,0,70,0" VerticalAlignment="Center" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_2.Aufheizzeit.Min" AuthorizationRight="RecipeManagement"/>
+                <vw:NumericVarIn Grid.Row="2" Width="60" Height="40" HorizontalAlignment="Left" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text10" LocalizableUnitText="@Einheiten.Stunden" VerticalAlignment="Center" Margin="240,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_2.Haltezeit.Std" AuthorizationRight="RecipeManagement" />
+                <vw:NumericVarIn Grid.Row="2" Width="60" Height="40" HorizontalAlignment="Right" Margin="0,0,70,0" FontSize="14" LocalizableUnitText="@Einheiten.Min" Grid.Column="1" VerticalAlignment="Center" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.LGO.Heizen_2.Haltezeit.Min" AuthorizationRight="RecipeManagement" />
+            </Grid>
+        </vw:RadioButton>
+    </Grid>
+</vw:View>

@@ -1,0 +1,48 @@
+﻿<vw:View 
+    x:Class="HMI.Views.MainRegion.MachineOverview.MO_Status"
+	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	        xmlns:vw="http://inosoft.com/visiwin7" IsVisibleChanged="View_IsVisibleChanged">
+    <StackPanel >
+        <vw:GroupBox Margin="10" HeaderText="Header" Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@StatusView.Text1">
+            <Grid Margin="10" Width="600">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <vw:TextVarOut x:Name="data1" Width="400" Height="40" LocalizableLabelText="@StatusView.Text4" HorizontalAlignment="Right" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.Charge#STRING20" Margin="0,5" />
+                <vw:TextVarOut x:Name="mr" Width="400" Height="40" Grid.Row="1" Margin="0,10,0,0" LocalizableLabelText="@StatusView.Text2" HorizontalAlignment="Right" ValueChanged="Mr_ValueChanged" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.Maschinenprogramm#STRING20"/>
+                <vw:TextVarOut x:Name="descr" Width="400" Height="40" Grid.Row="2"  Margin="0,10,0,0"  LocalizableLabelText="@StatusView.Text5" HorizontalAlignment="Right" />
+                <vw:TextVarOut x:Name="user" Width="400" Height="40" Grid.Row="4" LocalizableLabelText="@StatusView.Text3" Margin="0,10,0,0" HorizontalAlignment="Right" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.User#STRING20" />
+                <vw:NavigationButton Content="" Background="Transparent" BorderBrush="Transparent" Grid.Row="1" Click="NavigationButton_Click"/>
+            </Grid>
+        </vw:GroupBox>
+        <vw:GroupBox Margin="10" LocalizableHeaderText="@StatusView.Text6" Style="{DynamicResource GroupBoxStyle}" VerticalAlignment="Center">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel  Grid.ColumnSpan="2">
+                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@StatusView.Text19" LocalizableLabelText="@StatusView.Text7" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.Status_Bearbeitung.Nacharbeit_laeuft" IsEnabled="False"/>
+                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@Textlists.Ende.Text2" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text8" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.LGO_Status.Heizen_Ende" IsEnabled="False"/>
+                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text9" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.LGO_Status.Abschrecken_Ende" IsEnabled="False"/>
+                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text10" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.ALO_Status.Heizen_Ende" IsEnabled="False"/>
+                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text11" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.ALO_Status.Abschrecken_Ende" IsEnabled="False"/>
+                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text12" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.NANIO_Abschrecken_Status.Abschrecken_Ende" IsEnabled="False"/>
+                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text13" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.LT_Abschrecken_Status.Abschrecken_Ende" IsEnabled="False"/>
+
+                </StackPanel>
+                <vw:Button  Width="160"  Style="{DynamicResource FP_GrayButton}" LocalizableText="@MainOverview.Text43"  Height="40"   VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click" AuthorizationRight="Status"/>
+
+                <Grid Grid.Row="2" Grid.Column="0" Margin="0,10,0,0" Grid.ColumnSpan="2"/>
+            </Grid>
+        </vw:GroupBox>
+    </StackPanel>
+</vw:View>

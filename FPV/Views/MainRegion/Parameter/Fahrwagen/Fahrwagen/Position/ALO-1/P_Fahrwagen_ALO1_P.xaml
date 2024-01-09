@@ -1,0 +1,19 @@
+﻿<vw:View 
+    x:Class="HMI.Parameter.Fahrwagen.P_Fahrwagen_ALO1_P"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+    Height="395" Width="580">
+
+    <vw:GroupBox Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Parameter.Text8" Margin="10">
+        <StackPanel>
+            <vw:NumericVarOut Width="80" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-38,50,0" FontSize="14" LocalizableLabelText="@Parameter.Text3" LocalizableUnitText="@Einheiten.mm" Foreground="White" Background="{DynamicResource FP_LightGreen}" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Fahrwagen.Aktuelle Pos in mm" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,20,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text35" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Parameter.Position.Hubtisch.ALO 1.Ofen" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text38" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Parameter.Position.Hubtisch.ALO 1.Überhub" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text41" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Parameter.Position.Hubtisch.ALO 1.Abstellplatz" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text37" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Parameter.Position.Hubtisch Luft.ALO 1.Ofen" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text36" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Parameter.Position.Hubtisch Luft.ALO 1.Überhub" FormatString="{}0.0"/>
+            <vw:NumericVarIn Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="14" LocalizableLabelText="@Parameter.Text40" LocalizableUnitText="@Einheiten.mm" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Parameter.Position.Hubtisch Luft.ALO 1.Abstellplatz" FormatString="{}0.0"/>
+        </StackPanel>
+    </vw:GroupBox>
+</vw:View>

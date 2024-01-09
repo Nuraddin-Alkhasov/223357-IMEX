@@ -1,0 +1,37 @@
+﻿<vw:View x:Class="HMI.Handmenu.Fahrwagen.H_Fahrwagen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+    Width="1840" Height="890" Background="{DynamicResource MainViewBackgroundBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Width="1500" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <vw:TextBlock Margin="0,-100,0,0" LocalizableText="@HandMenu.Text40" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <vw:TextVarOut Height="40" VerticalAlignment="Center" Margin="420,0,420,0" HorizontalContentAlignment="Center" Value="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Fahrwagen.Position Textliste, Converter={StaticResource ValueToStateTextConverter}, States={StaticResource Fahrwagen}, StateMode=Value}"/>
+            <vw:NumericVarOut Width="160" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="420,100,0,0" LocalizableLabelText="@HandMenu.Soll" LocalizableUnitText="@Einheiten.mm" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Sollwerte.Fahrwagen.Position in mm" FormatString="{}0.0"/>
+            <vw:NumericVarOut Width="160" Height="40" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,100,420,0" LocalizableLabelText="@HandMenu.Ist" LocalizableUnitText="@Einheiten.mm" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Fahrwagen.Aktuelle Pos in mm" FormatString="{}0.0"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" LocalizableText="@Tasten.Ein" Style="{DynamicResource FP_BlueButton}" KeyMode="KeyMode" AuthorizationRight="ManualDrive" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Ein" Visibility="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Hubtisch Sonderrecht, Converter={StaticResource IntToVisConverter0}}"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" LocalizableText="@Tasten.Ein" Style="{DynamicResource FP_BlueButton}" KeyMode="KeyMode" AuthorizationRight="CarriageSpecialRight" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Ein" Visibility="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Hubtisch Sonderrecht, Converter={StaticResource IntToVisConverter1}}" Tag="DriveOn" Click="Key_Click" />
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Right" VerticalAlignment="Center"  Style="{DynamicResource FP_RedButton}" KeyMode="KeyMode" LocalizableText="@Tasten.Stop" AuthorizationRight="ManualDrive" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Fahrantrieb.Aus" />
+            <vw:ComboBox Width="580" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" StateList="{DynamicResource Fahrwagen_VW}" AuthorizationRight="ManualDrive" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Sollwerte.Fahrwagen.Vorwahl Position Textliste"/>
+            <vw:ComboBox Width="200" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" StateList="{DynamicResource _Nein / Ja}" AuthorizationRight="ManualDrive" LocalizableLabelText="HandMenu.Text49" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.PC.Freigabe Materialfluss" ValueChanged="ComboBox_ValueChanged"/>
+
+        </Grid>
+        <Grid Width="1500" Height="250" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="11*"/>
+                <RowDefinition Height="14*"/>
+            </Grid.RowDefinitions>
+            <vw:TextBlock LocalizableText="@HandMenu.Text5" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <vw:TextVarOut Height="40" VerticalAlignment="Center" Margin="420,105" HorizontalContentAlignment="Center" Grid.RowSpan="2" Value="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.Luftabschreckung.DB FW LA HMI.Istwerte.Türe Position Textliste, Converter={StaticResource ValueToStateTextConverter}, States={StaticResource Tür}, StateMode=Value}"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Left" VerticalAlignment="Center" LocalizableText="@Tasten.Schließen" Style="{DynamicResource FP_BlueButton}" KeyMode="KeyMode" AuthorizationRight="ManualDrive" Margin="0,85" Grid.RowSpan="2" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Luftabschreckung.DB FW LA HMI.PC.Türe.Zu"/>
+            <vw:Key Width="160" Height="80" HorizontalAlignment="Right" VerticalAlignment="Center"  Style="{DynamicResource FP_BlueButton}" KeyMode="KeyMode" LocalizableText="@Tasten.öffnen" AuthorizationRight="ManualDrive" Margin="0,85" Grid.RowSpan="2" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Luftabschreckung.DB FW LA HMI.PC.Türe.Auf" />
+        </Grid>
+        <vw:TextVarOut Width="60" Height="60" CornerRadius="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,300,0" LocalizableLabelText="@HandMenu.Text56" Background="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Sensor Status Spaltkontolle, Converter={StaticResource ValueToStateBrushConverter}, States={StaticResource MachineONOFF}, StateMode=Value}" VariableName="__UNLINKED_BSTR" BorderBrush="Black"/>
+        <vw:TextVarOut Width="60" Height="60" CornerRadius="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="300,0,0,0" LocalizableLabelText="@HandMenu.Text57" Background="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Nocken Sensor Ok, Converter={StaticResource ValueToStateBrushConverter}, States={StaticResource MachineONOFF}, StateMode=Value}" VariableName="__UNLINKED_BSTR" BorderBrush="Black"/>
+
+    </Grid>
+</vw:View>

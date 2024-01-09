@@ -1,0 +1,21 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DataTemplate x:Key="arrow.left">
+        <Image Source="/Images/appbar.arrow.left.png" Stretch="Fill" Width="35" Height="35"/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="arrow.right">
+        <Image Source="/Images/appbar.arrow.left.png" Stretch="Fill" Width="35" Height="35" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <RotateTransform Angle="180"/>
+            </Image.RenderTransform>
+        </Image>
+    </DataTemplate>
+
+    <DataTemplate x:Key="arrow.controls">
+        <Image Source="/Images/appbar.cog.png" Stretch="Fill" Width="35" Height="35"/>
+    </DataTemplate>
+
+</ResourceDictionary>

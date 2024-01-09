@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HistoricalLoggingDataSet" targetNamespace="http://tempuri.org/HistoricalLoggingData.xsd" xmlns:mstns="http://tempuri.org/HistoricalLoggingData.xsd" xmlns="http://tempuri.org/HistoricalLoggingData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HistoricalLoggingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="HistoricalLoggingDataSet" msprop:Generator_UserDSName="HistoricalLoggingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HistoricalLoggingEntries" msprop:Generator_TableClassName="HistoricalLoggingEntriesDataTable" msprop:Generator_TableVarName="tableHistoricalLoggingEntries" msprop:Generator_TablePropName="HistoricalLoggingEntries" msprop:Generator_RowDeletingName="HistoricalLoggingEntriesRowDeleting" msprop:Generator_RowChangingName="HistoricalLoggingEntriesRowChanging" msprop:Generator_RowEvHandlerName="HistoricalLoggingEntriesRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoricalLoggingEntriesRowDeleted" msprop:Generator_UserTableName="HistoricalLoggingEntries" msprop:Generator_RowChangedName="HistoricalLoggingEntriesRowChanged" msprop:Generator_RowEvArgName="HistoricalLoggingEntriesRowChangeEvent" msprop:Generator_RowClassName="HistoricalLoggingEntriesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" msprop:Generator_UserColumnName="CategoryName" type="xs:string" minOccurs="0" />
+              <xs:element name="EventName" msprop:Generator_ColumnVarNameInTable="columnEventName" msprop:Generator_ColumnPropNameInRow="EventName" msprop:Generator_ColumnPropNameInTable="EventNameColumn" msprop:Generator_UserColumnName="EventName" type="xs:string" minOccurs="0" />
+              <xs:element name="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn" msprop:Generator_UserColumnName="FileName" type="xs:string" />
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="HasNotes" msprop:Generator_ColumnVarNameInTable="columnHasNotes" msprop:Generator_ColumnPropNameInRow="HasNotes" msprop:Generator_ColumnPropNameInTable="HasNotesColumn" msprop:Generator_UserColumnName="HasNotes" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="LocalizedCategoryName" msprop:Generator_ColumnVarNameInTable="columnLocalizedCategoryName" msprop:Generator_ColumnPropNameInRow="LocalizedCategoryName" msprop:Generator_ColumnPropNameInTable="LocalizedCategoryNameColumn" msprop:Generator_UserColumnName="LocalizedCategoryName" type="xs:string" minOccurs="0" />
+              <xs:element name="LocalizedEventName" msprop:Generator_ColumnVarNameInTable="columnLocalizedEventName" msprop:Generator_ColumnPropNameInRow="LocalizedEventName" msprop:Generator_ColumnPropNameInTable="LocalizedEventNameColumn" msprop:Generator_UserColumnName="LocalizedEventName" type="xs:string" minOccurs="0" />
+              <xs:element name="LocalizedText" msprop:Generator_ColumnVarNameInTable="columnLocalizedText" msprop:Generator_ColumnPropNameInRow="LocalizedText" msprop:Generator_ColumnPropNameInTable="LocalizedTextColumn" msprop:Generator_UserColumnName="LocalizedText" type="xs:string" minOccurs="0" />
+              <xs:element name="Machine" msprop:Generator_ColumnVarNameInTable="columnMachine" msprop:Generator_ColumnPropNameInRow="Machine" msprop:Generator_ColumnPropNameInTable="MachineColumn" msprop:Generator_UserColumnName="Machine" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeStamp" msprop:Generator_ColumnVarNameInTable="columnTimeStamp" msprop:Generator_ColumnPropNameInRow="TimeStamp" msprop:Generator_ColumnPropNameInTable="TimeStampColumn" msprop:Generator_UserColumnName="TimeStamp" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="User" msprop:Generator_ColumnVarNameInTable="columnUser" msprop:Generator_ColumnPropNameInRow="User" msprop:Generator_ColumnPropNameInTable="UserColumn" msprop:Generator_UserColumnName="User" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoggingEntryParameters" msprop:Generator_TableClassName="LoggingEntryParametersDataTable" msprop:Generator_TableVarName="tableLoggingEntryParameters" msprop:Generator_RowChangedName="LoggingEntryParametersRowChanged" msprop:Generator_TablePropName="LoggingEntryParameters" msprop:Generator_RowDeletingName="LoggingEntryParametersRowDeleting" msprop:Generator_RowChangingName="LoggingEntryParametersRowChanging" msprop:Generator_RowEvHandlerName="LoggingEntryParametersRowChangeEventHandler" msprop:Generator_RowDeletedName="LoggingEntryParametersRowDeleted" msprop:Generator_RowClassName="LoggingEntryParametersRow" msprop:Generator_UserTableName="LoggingEntryParameters" msprop:Generator_RowEvArgName="LoggingEntryParametersRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Index" msprop:Generator_ColumnVarNameInTable="columnIndex" msprop:Generator_ColumnPropNameInRow="Index" msprop:Generator_ColumnPropNameInTable="IndexColumn" msprop:Generator_UserColumnName="Index" type="xs:int" />
+              <xs:element name="LocalizedName" msprop:Generator_ColumnVarNameInTable="columnLocalizedName" msprop:Generator_ColumnPropNameInRow="LocalizedName" msprop:Generator_ColumnPropNameInTable="LocalizedNameColumn" msprop:Generator_UserColumnName="LocalizedName" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Quality" msprop:Generator_ColumnVarNameInTable="columnQuality" msprop:Generator_ColumnPropNameInRow="Quality" msprop:Generator_ColumnPropNameInTable="QualityColumn" msprop:Generator_UserColumnName="Quality" type="xs:string" minOccurs="0" />
+              <xs:element name="Timestamp" msprop:Generator_ColumnVarNameInTable="columnTimestamp" msprop:Generator_ColumnPropNameInRow="Timestamp" msprop:Generator_ColumnPropNameInTable="TimestampColumn" msprop:Generator_UserColumnName="Timestamp" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" type="xs:string" minOccurs="0" />
+              <xs:element name="QUAL_Data" msprop:Generator_ColumnVarNameInTable="columnQUAL_Data" msprop:Generator_ColumnPropNameInRow="QUAL_Data" msprop:Generator_ColumnPropNameInTable="QUAL_DataColumn" msprop:Generator_UserColumnName="QUAL_Data" type="xs:string" minOccurs="0" />
+              <xs:element name="QUAL_IsBad" msprop:Generator_ColumnVarNameInTable="columnQUAL_IsBad" msprop:Generator_ColumnPropNameInRow="QUAL_IsBad" msprop:Generator_ColumnPropNameInTable="QUAL_IsBadColumn" msprop:Generator_UserColumnName="QUAL_IsBad" type="xs:boolean" minOccurs="0" />
+              <xs:element name="QUAL_IsGoodOrUncretain" msprop:Generator_ColumnVarNameInTable="columnQUAL_IsGoodOrUncretain" msprop:Generator_ColumnPropNameInRow="QUAL_IsGoodOrUncretain" msprop:Generator_ColumnPropNameInTable="QUAL_IsGoodOrUncretainColumn" msprop:Generator_UserColumnName="QUAL_IsGoodOrUncretain" type="xs:boolean" minOccurs="0" />
+              <xs:element name="QUAL_Limit" msprop:Generator_ColumnVarNameInTable="columnQUAL_Limit" msprop:Generator_ColumnPropNameInRow="QUAL_Limit" msprop:Generator_ColumnPropNameInTable="QUAL_LimitColumn" msprop:Generator_UserColumnName="QUAL_Limit" type="xs:string" minOccurs="0" />
+              <xs:element name="QUAL_Value" msprop:Generator_ColumnVarNameInTable="columnQUAL_Value" msprop:Generator_ColumnPropNameInRow="QUAL_Value" msprop:Generator_ColumnPropNameInTable="QUAL_ValueColumn" msprop:Generator_UserColumnName="QUAL_Value" type="xs:int" minOccurs="0" />
+              <xs:element name="Entry_FileName" msprop:Generator_ColumnVarNameInTable="columnEntry_FileName" msprop:Generator_ColumnPropNameInRow="Entry_FileName" msprop:Generator_ColumnPropNameInTable="Entry_FileNameColumn" msprop:Generator_UserColumnName="Entry_FileName" type="xs:string" />
+              <xs:element name="Entry_ID" msprop:Generator_ColumnVarNameInTable="columnEntry_ID" msprop:Generator_ColumnPropNameInRow="Entry_ID" msprop:Generator_ColumnPropNameInTable="Entry_IDColumn" msprop:Generator_UserColumnName="Entry_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LoggingEntryNotes" msprop:Generator_TableClassName="LoggingEntryNotesDataTable" msprop:Generator_TableVarName="tableLoggingEntryNotes" msprop:Generator_RowChangedName="LoggingEntryNotesRowChanged" msprop:Generator_TablePropName="LoggingEntryNotes" msprop:Generator_RowDeletingName="LoggingEntryNotesRowDeleting" msprop:Generator_RowChangingName="LoggingEntryNotesRowChanging" msprop:Generator_RowEvHandlerName="LoggingEntryNotesRowChangeEventHandler" msprop:Generator_RowDeletedName="LoggingEntryNotesRowDeleted" msprop:Generator_RowClassName="LoggingEntryNotesRow" msprop:Generator_UserTableName="LoggingEntryNotes" msprop:Generator_RowEvArgName="LoggingEntryNotesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FileName" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ColumnPropNameInTable="FileNameColumn" msprop:Generator_UserColumnName="FileName" type="xs:string" />
+              <xs:element name="HistoricalEntryFullName" msprop:Generator_ColumnVarNameInTable="columnHistoricalEntryFullName" msprop:Generator_ColumnPropNameInRow="HistoricalEntryFullName" msprop:Generator_ColumnPropNameInTable="HistoricalEntryFullNameColumn" msprop:Generator_UserColumnName="HistoricalEntryFullName" type="xs:string" minOccurs="0" />
+              <xs:element name="HistoricalEntryID" msprop:Generator_ColumnVarNameInTable="columnHistoricalEntryID" msprop:Generator_ColumnPropNameInRow="HistoricalEntryID" msprop:Generator_ColumnPropNameInTable="HistoricalEntryIDColumn" msprop:Generator_UserColumnName="HistoricalEntryID" type="xs:int" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Text" msprop:Generator_ColumnVarNameInTable="columnText" msprop:Generator_ColumnPropNameInRow="Text" msprop:Generator_ColumnPropNameInTable="TextColumn" msprop:Generator_UserColumnName="Text" type="xs:string" minOccurs="0" />
+              <xs:element name="Timestamp" msprop:Generator_ColumnVarNameInTable="columnTimestamp" msprop:Generator_ColumnPropNameInRow="Timestamp" msprop:Generator_ColumnPropNameInTable="TimestampColumn" msprop:Generator_UserColumnName="Timestamp" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="User" msprop:Generator_ColumnVarNameInTable="columnUser" msprop:Generator_ColumnPropNameInRow="User" msprop:Generator_ColumnPropNameInTable="UserColumn" msprop:Generator_UserColumnName="User" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Joined_EntriesAndNotes" msprop:Generator_TableClassName="Joined_EntriesAndNotesDataTable" msprop:Generator_TableVarName="tableJoined_EntriesAndNotes" msprop:Generator_TablePropName="Joined_EntriesAndNotes" msprop:Generator_RowDeletingName="Joined_EntriesAndNotesRowDeleting" msprop:Generator_RowChangingName="Joined_EntriesAndNotesRowChanging" msprop:Generator_RowEvHandlerName="Joined_EntriesAndNotesRowChangeEventHandler" msprop:Generator_RowDeletedName="Joined_EntriesAndNotesRowDeleted" msprop:Generator_UserTableName="Joined_EntriesAndNotes" msprop:Generator_RowChangedName="Joined_EntriesAndNotesRowChanged" msprop:Generator_RowEvArgName="Joined_EntriesAndNotesRowChangeEvent" msprop:Generator_RowClassName="Joined_EntriesAndNotesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="E_CategoryName" msdata:Caption="CategoryName" msprop:Generator_ColumnVarNameInTable="columnE_CategoryName" msprop:Generator_ColumnPropNameInRow="E_CategoryName" msprop:Generator_ColumnPropNameInTable="E_CategoryNameColumn" msprop:Generator_UserColumnName="E_CategoryName" type="xs:string" minOccurs="0" />
+              <xs:element name="E_EventName" msdata:Caption="EventName" msprop:Generator_ColumnVarNameInTable="columnE_EventName" msprop:Generator_ColumnPropNameInRow="E_EventName" msprop:Generator_ColumnPropNameInTable="E_EventNameColumn" msprop:Generator_UserColumnName="E_EventName" type="xs:string" minOccurs="0" />
+              <xs:element name="E_FileName" msdata:Caption="FileName" msprop:Generator_ColumnVarNameInTable="columnE_FileName" msprop:Generator_ColumnPropNameInRow="E_FileName" msprop:Generator_ColumnPropNameInTable="E_FileNameColumn" msprop:Generator_UserColumnName="E_FileName" type="xs:string" />
+              <xs:element name="E_FullName" msdata:Caption="FullName" msprop:Generator_ColumnVarNameInTable="columnE_FullName" msprop:Generator_ColumnPropNameInRow="E_FullName" msprop:Generator_ColumnPropNameInTable="E_FullNameColumn" msprop:Generator_UserColumnName="E_FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="E_HasNotes" msdata:Caption="HasNotes" msprop:Generator_ColumnVarNameInTable="columnE_HasNotes" msprop:Generator_ColumnPropNameInRow="E_HasNotes" msprop:Generator_ColumnPropNameInTable="E_HasNotesColumn" msprop:Generator_UserColumnName="E_HasNotes" type="xs:boolean" minOccurs="0" />
+              <xs:element name="E_ID" msdata:Caption="ID" msprop:Generator_ColumnVarNameInTable="columnE_ID" msprop:Generator_ColumnPropNameInRow="E_ID" msprop:Generator_ColumnPropNameInTable="E_IDColumn" msprop:Generator_UserColumnName="E_ID" type="xs:int" />
+              <xs:element name="E_LocalizedCategoryName" msdata:Caption="LocalizedCategoryName" msprop:Generator_ColumnVarNameInTable="columnE_LocalizedCategoryName" msprop:Generator_ColumnPropNameInRow="E_LocalizedCategoryName" msprop:Generator_ColumnPropNameInTable="E_LocalizedCategoryNameColumn" msprop:Generator_UserColumnName="E_LocalizedCategoryName" type="xs:string" minOccurs="0" />
+              <xs:element name="E_LocalizedEventName" msdata:Caption="LocalizedEventName" msprop:Generator_ColumnVarNameInTable="columnE_LocalizedEventName" msprop:Generator_ColumnPropNameInRow="E_LocalizedEventName" msprop:Generator_ColumnPropNameInTable="E_LocalizedEventNameColumn" msprop:Generator_UserColumnName="E_LocalizedEventName" type="xs:string" minOccurs="0" />
+              <xs:element name="E_LocalizedText" msdata:Caption="LocalizedText" msprop:Generator_ColumnVarNameInTable="columnE_LocalizedText" msprop:Generator_ColumnPropNameInRow="E_LocalizedText" msprop:Generator_ColumnPropNameInTable="E_LocalizedTextColumn" msprop:Generator_UserColumnName="E_LocalizedText" type="xs:string" minOccurs="0" />
+              <xs:element name="E_Machine" msdata:Caption="Machine" msprop:Generator_ColumnVarNameInTable="columnE_Machine" msprop:Generator_ColumnPropNameInRow="E_Machine" msprop:Generator_ColumnPropNameInTable="E_MachineColumn" msprop:Generator_UserColumnName="E_Machine" type="xs:string" minOccurs="0" />
+              <xs:element name="E_TimeStamp" msdata:Caption="TimeStamp" msprop:Generator_ColumnVarNameInTable="columnE_TimeStamp" msprop:Generator_ColumnPropNameInRow="E_TimeStamp" msprop:Generator_ColumnPropNameInTable="E_TimeStampColumn" msprop:Generator_UserColumnName="E_TimeStamp" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="E_User" msdata:Caption="User" msprop:Generator_ColumnVarNameInTable="columnE_User" msprop:Generator_ColumnPropNameInRow="E_User" msprop:Generator_ColumnPropNameInTable="E_UserColumn" msprop:Generator_UserColumnName="E_User" type="xs:string" minOccurs="0" />
+              <xs:element name="N_FileName" msdata:Caption="FileName" msprop:Generator_ColumnVarNameInTable="columnN_FileName" msprop:Generator_ColumnPropNameInRow="N_FileName" msprop:Generator_ColumnPropNameInTable="N_FileNameColumn" msprop:Generator_UserColumnName="N_FileName" type="xs:string" />
+              <xs:element name="N_HistoricalEntryFullName" msdata:Caption="HistoricalEntryFullName" msprop:Generator_ColumnVarNameInTable="columnN_HistoricalEntryFullName" msprop:Generator_ColumnPropNameInRow="N_HistoricalEntryFullName" msprop:Generator_ColumnPropNameInTable="N_HistoricalEntryFullNameColumn" msprop:Generator_UserColumnName="N_HistoricalEntryFullName" type="xs:string" minOccurs="0" />
+              <xs:element name="N_HistoricalEntryID" msdata:Caption="HistoricalEntryID" msprop:Generator_ColumnVarNameInTable="columnN_HistoricalEntryID" msprop:Generator_ColumnPropNameInRow="N_HistoricalEntryID" msprop:Generator_ColumnPropNameInTable="N_HistoricalEntryIDColumn" msprop:Generator_UserColumnName="N_HistoricalEntryID" type="xs:int" />
+              <xs:element name="N_ID" msdata:Caption="ID" msprop:Generator_ColumnVarNameInTable="columnN_ID" msprop:Generator_ColumnPropNameInRow="N_ID" msprop:Generator_ColumnPropNameInTable="N_IDColumn" msprop:Generator_UserColumnName="N_ID" type="xs:int" />
+              <xs:element name="N_Text" msdata:Caption="Text" msprop:Generator_ColumnVarNameInTable="columnN_Text" msprop:Generator_ColumnPropNameInRow="N_Text" msprop:Generator_ColumnPropNameInTable="N_TextColumn" msprop:Generator_UserColumnName="N_Text" type="xs:string" minOccurs="0" />
+              <xs:element name="N_Timestamp" msdata:Caption="Timestamp" msprop:Generator_ColumnVarNameInTable="columnN_Timestamp" msprop:Generator_ColumnPropNameInRow="N_Timestamp" msprop:Generator_ColumnPropNameInTable="N_TimestampColumn" msprop:Generator_UserColumnName="N_Timestamp" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="N_User" msdata:Caption="User" msprop:Generator_ColumnVarNameInTable="columnN_User" msprop:Generator_ColumnPropNameInRow="N_User" msprop:Generator_ColumnPropNameInTable="N_UserColumn" msprop:Generator_UserColumnName="N_User" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HistoricalLoggingEntries" />
+      <xs:field xpath="mstns:FileName" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="LoggingEntryParameters_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LoggingEntryParameters" />
+      <xs:field xpath="mstns:Entry_ID" />
+      <xs:field xpath="mstns:Entry_FileName" />
+      <xs:field xpath="mstns:Index" />
+    </xs:unique>
+    <xs:unique name="LoggingEntryNotes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LoggingEntryNotes" />
+      <xs:field xpath="mstns:ID" />
+      <xs:field xpath="mstns:HistoricalEntryID" />
+      <xs:field xpath="mstns:FileName" />
+    </xs:unique>
+    <xs:unique name="Joined_EntriesAndNotes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Joined_EntriesAndNotes" />
+      <xs:field xpath="mstns:N_ID" />
+      <xs:field xpath="mstns:E_ID" />
+      <xs:field xpath="mstns:E_FileName" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="HistoricalLoggingEntrys_LoggingEntryParameters" msdata:parent="HistoricalLoggingEntries" msdata:child="LoggingEntryParameters" msdata:parentkey="FileName ID" msdata:childkey="Entry_FileName Entry_ID" msprop:Generator_UserChildTable="LoggingEntryParameters" msprop:Generator_ChildPropName="GetLoggingEntryParametersRows" msprop:Generator_UserRelationName="HistoricalLoggingEntrys_LoggingEntryParameters" msprop:Generator_RelationVarName="relationHistoricalLoggingEntrys_LoggingEntryParameters" msprop:Generator_UserParentTable="HistoricalLoggingEntries" msprop:Generator_ParentPropName="HistoricalLoggingEntrysRowParent" />
+      <msdata:Relationship name="HistoricalLoggingEntrys_LoggingEntryNotes" msdata:parent="HistoricalLoggingEntries" msdata:child="LoggingEntryNotes" msdata:parentkey="FileName ID" msdata:childkey="FileName ID" msprop:Generator_UserChildTable="LoggingEntryNotes" msprop:Generator_ChildPropName="GetLoggingEntryNotesRows" msprop:Generator_UserRelationName="HistoricalLoggingEntrys_LoggingEntryNotes" msprop:Generator_RelationVarName="relationHistoricalLoggingEntrys_LoggingEntryNotes" msprop:Generator_UserParentTable="HistoricalLoggingEntries" msprop:Generator_ParentPropName="HistoricalLoggingEntrysRowParent" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

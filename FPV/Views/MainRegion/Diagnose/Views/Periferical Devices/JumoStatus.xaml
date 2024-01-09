@@ -1,0 +1,178 @@
+﻿<vw:View 
+    x:Class="HMI.Views.MainRegion.MachineOverview.JumoStatus"
+	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	        xmlns:vw="http://inosoft.com/visiwin7" >
+   
+    <Grid Width="1000" Height="860">
+       
+        <TabControl FontSize="14" TabStripPlacement="Left" BorderThickness="2" BorderBrush="{DynamicResource FP_Dark}">
+            <TabItem x:Name="btn1"  Height="60" Width="200" Style="{DynamicResource TabItemStyle}"  Header="{vw:LocalizedTextExtension LocalizedText=@Jumo.Text16}" Margin="0,10,0,-10" PreviewTouchDown="Btn1_PreviewTouchDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text5" Margin="10">
+                            <StackPanel Margin="10">
+                                <vw:TextVarOut Width="120" Height="40" LocalizableLabelText="@Jumo.Text1" HorizontalAlignment="Right" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 1.Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text2" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 1.Störung, Converter={StaticResource BoolToBlinkConverterDS}}" />
+                                <vw:TextVarOut Width="123" Height="40" LocalizableLabelText="@Jumo.Text3" HorizontalAlignment="Right"  Margin="0,10,0,0" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 1.Workarround Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}"  Width="120" Height="40" LocalizableLabelText="@Jumo.Text4" HorizontalAlignment="Right"  Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 1.Workarround Störung, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <vw:GroupBox Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text6" Margin="10">
+                            <StackPanel Margin="10">
+                                <vw:TextVarOut Width="120" Height="40" LocalizableLabelText="@Jumo.Text1" HorizontalAlignment="Right" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 2.Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text2" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 2.Störung, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:TextVarOut Width="123" Height="40" LocalizableLabelText="@Jumo.Text3" HorizontalAlignment="Right"  Margin="0,10,0,0" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 2.Workarround Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}"  Width="120" Height="40" LocalizableLabelText="@Jumo.Text4" HorizontalAlignment="Right"  Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung lesen CPU 2.Workarround Störung, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+
+                        </vw:GroupBox>
+
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="btn2"   Style="{DynamicResource TabItemStyle}" Height="60" Width="200" Header="{vw:LocalizedTextExtension LocalizedText=@Jumo.Text7}" Margin="0,20,0,-20" PreviewTouchDown="Btn2_PreviewTouchDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text5" Margin="10">
+                            <StackPanel Margin="10">
+                                <vw:TextVarOut Width="120" Height="40" LocalizableLabelText="@Jumo.Text1" HorizontalAlignment="Right" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 1.Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text2" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 1.Störung, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:TextVarOut Width="123" Height="40" LocalizableLabelText="@Jumo.Text3" HorizontalAlignment="Right"  Margin="0,10,0,0" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 1.Workarround Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}"  Width="120" Height="40" LocalizableLabelText="@Jumo.Text4" HorizontalAlignment="Right"  Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 1.Workarround Störung, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" >
+                        <vw:GroupBox  Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text6" Margin="10">
+                            <StackPanel Margin="10">
+                                <vw:TextVarOut Width="120" Height="40" LocalizableLabelText="@Jumo.Text1" HorizontalAlignment="Right" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 2.Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text2" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 2.Störung, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:TextVarOut Width="123" Height="40" LocalizableLabelText="@Jumo.Text3" HorizontalAlignment="Right"  Margin="0,10,0,0" VariableName="IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 2.Workarround Status" />
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}"  Width="120" Height="40" LocalizableLabelText="@Jumo.Text4" HorizontalAlignment="Right"  Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Verbinung schreiben CPU 2.Workarround Störung, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="btn3" Style="{DynamicResource TabItemStyle}" Height="60" Width="200" Header="{vw:LocalizedTextExtension LocalizedText=@Jumo.Text1}" Margin="0,30,0,-30"  PreviewTouchDown="Btn4_PreviewTouchDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text20" Margin="10">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text8" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.HMI Speicher 1-5 unter 20%, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text17" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.S-Bus 1-5 gestört, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text18" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Sammelalarm HMI 1-5, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}"  Width="120" Height="40" LocalizableLabelText="@Jumo.Text19" HorizontalAlignment="Right"  Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Störung gesamt 1-5, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" >
+                        <vw:GroupBox  Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text21" Margin="10">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text8" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.HMI Speicher 6-10 unter 20%, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text17" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.S-Bus 6-10 gestört, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text18" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Sammelalarm HMI 6-10, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}"  Width="120" Height="40" LocalizableLabelText="@Jumo.Text19" HorizontalAlignment="Right"  Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Störung gesamt 6-10, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                    </StackPanel>
+                    
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="btn4"  Style="{DynamicResource TabItemStyle}" Height="60" Width="200" Header="{vw:LocalizedTextExtension LocalizedText=@Jumo.Text22}" Margin="0,40,0,-40" PreviewTouchDown="Btn5_PreviewTouchDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel >
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text30" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.LGO 1.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.LGO 1.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text23" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.ALO 1.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.ALO 1.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text24" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.ALO 2.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.ALO 2.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text31" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.LGO 2.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.LGO 2.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text25" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.ALO 3.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 1-5.Fühler.ALO 3.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text26" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 4.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 4.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text32" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.LGO 3.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.LGO 3.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text27" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 5.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 5.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text28" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 6.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 6.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                        <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@Jumo.Text29" Margin="10,10,10,0">
+                            <StackPanel Margin="10">
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text33" HorizontalAlignment="Right" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 7.Temp Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                                <vw:Switch Style="{DynamicResource SwitchStatusStyle}" Width="120" Height="40" LocalizableLabelText="@Jumo.Text34" HorizontalAlignment="Right" Margin="0,10,0,0" IsChecked="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.Jumo CPU ModBus TCP.Jumo HMI.PC.Staus CPU 6-10.Fühler.ALO 7.Nachlauf Fühler, Converter={StaticResource BoolToBlinkConverterDS}}"/>
+                            </StackPanel>
+                        </vw:GroupBox>
+                    </StackPanel>
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Rectangle HorizontalAlignment="Left" VerticalAlignment="Stretch" Fill="{DynamicResource FP_Red}" Margin="200,0,0,0" Width="4" />
+
+    </Grid>
+</vw:View>

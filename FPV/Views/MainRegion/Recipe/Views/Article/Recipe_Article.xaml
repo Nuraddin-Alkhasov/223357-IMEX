@@ -1,0 +1,29 @@
+﻿<vw:View 
+            x:Class="HMI.Views.MainRegion.Recipe.Recipe_Article"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:vw="http://inosoft.com/visiwin7"
+            Width="1840" Height="880" Background="{StaticResource MainViewBackgroundBrush}" >
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <vw:Region x:Name="region_Article" Grid.Column="1" Grid.RowSpan="3"/>
+        <vw:RadioButton x:Name="btnLGO" Width="200" Height="80"  HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}"  Checked="BtnLGO_Checked"  LocalizableText="@RecipeSystem.View.Grid.Text2" AuthorizationRight="RecipeManagement" />
+        <vw:RadioButton x:Name="btnALO" Width="200" Height="80" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}"   Checked="BtnALO_Checked" LocalizableText="@RecipeSystem.View.Grid.Text1" AuthorizationRight="RecipeManagement" />
+        <vw:RadioButton x:Name="btnNIO" Width="200" Height="80" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}"  Checked="BtnNIO_Checked"  LocalizableText="@RecipeSystem.View.Grid.Text3" AuthorizationRight="RecipeManagement" />
+        <vw:PictureBox x:Name="Item_Pic" Width="80" Height="80" HorizontalAlignment="Right" VerticalAlignment="Center"  Margin="0,10,10,190" Grid.Column="1">
+            <vw:PictureBox.Effect>
+                <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+            </vw:PictureBox.Effect>
+        </vw:PictureBox>
+        <vw:Button Grid.Column="1" Width="160" Height="90" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Style="{DynamicResource FP_GrayButton}" LocalizableText="@RecipeSystem.View.Buttons.Text4" Margin="1240,0,0,0" Click="NavigationButton_Click" Grid.Row="2" AuthorizationRight="RecipeManagement" />
+    </Grid>
+</vw:View>

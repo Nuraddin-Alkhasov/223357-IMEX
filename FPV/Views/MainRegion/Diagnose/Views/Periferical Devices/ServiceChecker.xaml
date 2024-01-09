@@ -1,0 +1,27 @@
+﻿<vw:View
+    x:Class="HMI.User.ServiceChecker"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:vw="http://inosoft.com/visiwin7"
+	Width="500" MinHeight="210" Background="{StaticResource MainViewBackgroundBrush}" IsVisibleChanged="View_IsVisibleChanged">
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Border CornerRadius="15" Background="{DynamicResource FP_Dark}" Margin="10"/>
+        <vw:TextBlock x:Name="path" Text="Path ..." FontSize="15" FontWeight="Bold" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+
+        <vw:Button Grid.Row="1" Height="40" Width="160" Style="{DynamicResource FP_GrayButton}" Click="CheckNow_Click" AuthorizationRight="DeviceManagement" LocalizableText="@Backup.Text6" Margin="0,0,10,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <vw:Button Grid.Row="1" Height="40" Width="160" Style="{DynamicResource FP_GrayButton}" Click="Browse_Click" AuthorizationRight="DeviceManagement" LocalizableText="@Backup.Text7" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <vw:DateTimeVarIn Name="tbTime" Grid.Row="2" BorderThickness="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontWeight="Bold" Foreground="White"  Width="230" Height="60" DateTimeMode="TimeOnly" HorizontalContentAlignment="Center" TouchpadName="TimeTouchpad" ValueChanged="TbTime_ValueChanged" AuthorizationRight="DeviceManagement"/>
+
+        <vw:Button x:Name="start" Grid.Row="2" Style="{DynamicResource FP_BlueButton}" Width="100" Height="40" LocalizableText="@Backup.Text4" AuthorizationRight="DeviceManagement" Click="Start_Click" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <vw:Button x:Name="stop" Grid.Row="2" Style="{DynamicResource FP_RedButton}" Width="100" Height="40" LocalizableText="@Backup.Text5" AuthorizationRight="DeviceManagement"  Click="Stop_Click" IsEnabled="False" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Right" />
+    </Grid>
+
+</vw:View>

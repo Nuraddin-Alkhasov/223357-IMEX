@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrendDataSampleDataSet" targetNamespace="http://tempuri.org/TrendDataSampleDataSet.xsd" xmlns:mstns="http://tempuri.org/TrendDataSampleDataSet.xsd" xmlns="http://tempuri.org/TrendDataSampleDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrendDataSampleDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="TrendDataSampleDataSet" msprop:Generator_UserDSName="TrendDataSampleDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSample" msprop:Generator_TableClassName="DataSampleDataTable" msprop:Generator_TableVarName="tableDataSample" msprop:Generator_TablePropName="DataSample" msprop:Generator_RowDeletingName="DataSampleRowDeleting" msprop:Generator_RowChangingName="DataSampleRowChanging" msprop:Generator_RowEvHandlerName="DataSampleRowChangeEventHandler" msprop:Generator_RowDeletedName="DataSampleRowDeleted" msprop:Generator_UserTableName="DataSample" msprop:Generator_RowChangedName="DataSampleRowChanged" msprop:Generator_RowEvArgName="DataSampleRowChangeEvent" msprop:Generator_RowClassName="DataSampleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="State" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" type="xs:string" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="YValue" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="YValue" msprop:Generator_ColumnVarNameInTable="columnYValue" msprop:Generator_ColumnPropNameInTable="YValueColumn" msprop:Generator_UserColumnName="YValue" type="xs:anyType" minOccurs="0" />
+              <xs:element name="TrendName" msprop:Generator_ColumnVarNameInTable="columnTrendName" msprop:Generator_ColumnPropNameInRow="TrendName" msprop:Generator_ColumnPropNameInTable="TrendNameColumn" msprop:Generator_UserColumnName="TrendName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

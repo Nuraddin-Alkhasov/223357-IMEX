@@ -1,0 +1,136 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:vw="http://inosoft.com/visiwin7">
+
+    <vw:SymbolStateCollection x:Key="MOTransporter">
+        <vw:SymbolState Value="19" Symbol="{DynamicResource MOT1}"/>
+        <vw:SymbolState Value="18" Symbol="{DynamicResource MOT2}"/>
+        <vw:SymbolState Value="17" Symbol="{DynamicResource MOT3}"/>
+        <vw:SymbolState Value="16" Symbol="{DynamicResource MOT4}"/>
+        <vw:SymbolState Value="15" Symbol="{DynamicResource MOT5}"/>
+        <vw:SymbolState Value="14" Symbol="{DynamicResource MOT6}"/>
+        <vw:SymbolState Value="13" Symbol="{DynamicResource MOT7}"/>
+        <vw:SymbolState Value="12" Symbol="{DynamicResource MOT8}"/>
+        <vw:SymbolState Value="11" Symbol="{DynamicResource MOT9}"/>
+        <vw:SymbolState Value="10" Symbol="{DynamicResource MOT10}"/>
+        <vw:SymbolState Value="9" Symbol="{DynamicResource MOT11}"/>
+        <vw:SymbolState Value="8" Symbol="{DynamicResource MOT12}"/>
+        <vw:SymbolState Value="7" Symbol="{DynamicResource MOT13}"/>
+        <vw:SymbolState Value="6" Symbol="{DynamicResource MOT14}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource MOT15}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource MOT16}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource MOT17}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource MOT18}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource MOT19}"/>
+        <vw:SymbolState Value="0" Symbol="{DynamicResource MOT20}"/>
+    </vw:SymbolStateCollection>
+
+    <vw:SymbolStateCollection x:Key="MODoors">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource MOD2}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource MOD1}"/>
+    </vw:SymbolStateCollection>
+
+    <vw:SymbolStateCollection x:Key="MORack">
+        <vw:SymbolState Value="1" Symbol="{DynamicResource MORack1}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource MORack2}"/>
+        <vw:SymbolState Value="6" Symbol="{DynamicResource MORack3}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource MORack4}"/>
+    </vw:SymbolStateCollection>
+
+    <vw:SymbolStateCollection x:Key="MOTL">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource MOTL1}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource MOTL2}"/>
+    </vw:SymbolStateCollection>
+
+
+    <vw:SymbolStateCollection x:Key="OvenRack">
+        <vw:SymbolState Value="1" Symbol="{DynamicResource OK1}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource OK21}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource OK22}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource OK2}"/>
+        <vw:SymbolState Value="6" Symbol="{DynamicResource OK3}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource OK4}"/>
+    </vw:SymbolStateCollection>
+    
+    <vw:SymbolStateCollection x:Key="OvenDoor">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource OT1}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource OT2}"/>
+    </vw:SymbolStateCollection>
+
+    
+    <vw:SymbolStateCollection x:Key="TransporterDoor">
+        <vw:SymbolState Value="3" Symbol="{DynamicResource TT1}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource TT2}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource TT2}"/>
+        <vw:SymbolState Value="0" Symbol="{DynamicResource TT2}"/>
+    </vw:SymbolStateCollection>
+    
+    <vw:SymbolStateCollection x:Key="TransporterLouver">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource TL1}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource TL2}"/>
+    </vw:SymbolStateCollection>
+    
+    <vw:SymbolStateCollection x:Key="TransporterRack">
+        <vw:SymbolState Value="1" Symbol="{DynamicResource TK1}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource TK2}"/>
+        <vw:SymbolState Value="6" Symbol="{DynamicResource TK3}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource TK4}"/>
+    </vw:SymbolStateCollection>
+
+    <vw:SymbolStateCollection x:Key="MVRack1">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource R12}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource R13}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource R14}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource R15}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource R16}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource R17}"/>
+    </vw:SymbolStateCollection>
+
+    <vw:SymbolStateCollection x:Key="MVRack2">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource R22}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource R23}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource R24}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource R25}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource R26}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource R27}"/>
+    </vw:SymbolStateCollection>
+
+    <vw:SymbolStateCollection x:Key="MVOven">
+        <vw:SymbolState Value="LGO" Symbol="{DynamicResource MOLGO}"/>
+        <vw:SymbolState Value="ALO" Symbol="{DynamicResource MOALO}"/>
+    </vw:SymbolStateCollection>
+
+    <vw:SymbolStateCollection x:Key="OVRack1">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource R32}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource R33}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource R34}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource R35}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource R36}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource R37}"/>
+    </vw:SymbolStateCollection>
+    <vw:SymbolStateCollection x:Key="OVRack2">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource R42}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource R43}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource R44}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource R45}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource R46}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource R47}"/>
+    </vw:SymbolStateCollection>
+    
+    <vw:SymbolStateCollection x:Key="TVRack1">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource R52}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource R53}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource R54}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource R55}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource R56}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource R57}"/>
+    </vw:SymbolStateCollection>
+    <vw:SymbolStateCollection x:Key="TVRack2">
+        <vw:SymbolState Value="0" Symbol="{DynamicResource R62}"/>
+        <vw:SymbolState Value="1" Symbol="{DynamicResource R63}"/>
+        <vw:SymbolState Value="2" Symbol="{DynamicResource R64}"/>
+        <vw:SymbolState Value="3" Symbol="{DynamicResource R65}"/>
+        <vw:SymbolState Value="4" Symbol="{DynamicResource R66}"/>
+        <vw:SymbolState Value="5" Symbol="{DynamicResource R67}"/>
+    </vw:SymbolStateCollection>
+</ResourceDictionary>

@@ -1,0 +1,95 @@
+﻿<vw:View
+	x:Class="HMI.Views.MainRegion.MachineOverview.MO_Transporter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:vw="http://inosoft.com/visiwin7"
+    xmlns:UC="clr-namespace:HMI.UserControls"
+    Background="{DynamicResource MainViewBackgroundBrush}" Width="1840" Height="1000">
+
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" >
+            <vw:PictureBox HorizontalAlignment="Left" Width="145" Height="190" VerticalAlignment="Top" Symbol="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Jalousie Staus für PC, Converter={StaticResource ValueToStateSymbolConverter}, States={StaticResource TransporterLouver}, StateMode=Value}" Margin="742,174,0,0" />
+            <vw:PictureBox Symbol="{DynamicResource Transporter}" />
+            <vw:Button Background="Transparent" BorderThickness="0" Click="Button_Click_1"/>
+
+            <vw:NumericVarOut Width="140" Height="50" HorizontalAlignment="Left" Margin="600,0,0,40" FontSize="26"  VerticalAlignment="Bottom"  HorizontalContentAlignment="Center" Grid.Row="1" LocalizableLabelText="@RecipeSystem.View.Grid.Text40" LocalizableUnitText="@Einheiten.%" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Luftabschreckung.DB FW LA HMI.Istwerte.Zuluft 1 Motordaten.Istwerte.Drehzahl %" />
+            <vw:NumericVarOut Width="140" Height="50" HorizontalAlignment="Right" Margin="0,0,600,40" FontSize="26"  VerticalAlignment="Bottom"  HorizontalContentAlignment="Center" Grid.Row="1" LocalizableLabelText="@RecipeSystem.View.Grid.Text42" LocalizableUnitText="@Einheiten.%" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Luftabschreckung.DB FW LA HMI.Istwerte.Abluft Motordaten.Istwerte.Drehzahl %" />
+            <vw:Button Style="{DynamicResource FP_GrayButton_v2}" Width="120" Height="80"  Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_3"  AuthorizationRight="Status" Symbol="{DynamicResource Motor}" SymbolHorizontalAlignment="Center" Margin="438,235,0,0" />
+            <vw:Button Style="{DynamicResource FP_GrayButton_v2}" Width="120" Height="80"  Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_4"  AuthorizationRight="Status" Symbol="{DynamicResource Motor}" SymbolHorizontalAlignment="Center" Margin="0,235,664,0" />
+            <vw:Button Style="{DynamicResource FP_GrayButton_v2}" Width="120" Height="80"  Text="" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_5"  AuthorizationRight="Status" Symbol="{DynamicResource Motor}" SymbolHorizontalAlignment="Center" Margin="0,80,970,0" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,0,125">
+                <vw:NumericVarOut Width="60" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,15,0" FontSize="26" LocalizableLabelText="@Parameter.Text62" LocalizableUnitText="@Einheiten.dp" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Verzögerung Warteposition.Minute" RawLimitMax="99" TextAlignment="Center"/>
+                <vw:NumericVarOut Width="60" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,90,0" FontSize="26"  LocalizableUnitText="@Einheiten.mmss" AuthorizationRight="Parameter" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Verzögerung Warteposition.Sekunde" RawLimitMax="59" TextAlignment="Center"/>
+            </StackPanel>
+            <vw:GroupBox  Style="{DynamicResource GroupBoxStyle}" Margin="20,0,0,40" LocalizableHeaderText="@RecipeSystem.View.Grid.Text19" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,10,0,0">
+                        <vw:NumericVarOut Width="60" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,15,0" FontSize="26" LocalizableLabelText="@Parameter.Text69"  AuthorizationRight="Parameter" RawLimitMax="99" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Sollwerte.ALO.Abschrecken.Transportzeit"/>
+                        <vw:NumericVarOut Width="60" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,90,0" FontSize="26"  LocalizableUnitText="@Einheiten.sek" AuthorizationRight="Parameter" RawLimitMax="59" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Istwerte.Abschrecken.Transportzeit ALO"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="150,10,0,10">
+                        <vw:NumericVarOut Width="60" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,15,0" FontSize="26" LocalizableLabelText="@Parameter.Text68"  AuthorizationRight="Parameter" RawLimitMax="99" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Sollwerte.LGO.Abschrecken.Transportzeit"/>
+                        <vw:NumericVarOut Width="60" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,90,0" FontSize="26"  LocalizableUnitText="@Einheiten.sek" AuthorizationRight="Parameter" RawLimitMax="59" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Istwerte.Abschrecken.Transportzeit LGO"/>
+                    </StackPanel>
+                </StackPanel>
+            </vw:GroupBox>
+            <vw:GroupBox  Style="{DynamicResource GroupBoxStyle}" Margin="20,0,0,400" LocalizableHeaderText="@MainOverview.Text50" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="315">
+                <StackPanel>
+                    <vw:NumericVarOut Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" FontSize="26" LocalizableLabelText="@MainOverview.Text48"  AuthorizationRight="Parameter" RawLimitMax="99" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.DB HY HT HMI.Istwerte.Druck" Value="100.0" FormatString="{}0.0"/>
+                    <vw:NumericVarOut Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,10" FontSize="26" LocalizableLabelText="@MainOverview.Text49"  AuthorizationRight="Parameter" RawLimitMax="99" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.DB HY HT HMI.Istwerte.Volumenstrom"  Value="100.0" FormatString="{}0.0"/>
+
+                </StackPanel>
+            </vw:GroupBox>
+
+            <vw:GroupBox  Style="{DynamicResource GroupBoxStyle}" Margin="0,16,40,0" LocalizableHeaderText="@RecipeSystem.View.Grid.Text18" VerticalAlignment="Top" HorizontalAlignment="Right">
+                <Grid>
+                    <vw:NumericVarOut Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="150,10,215,0" FontSize="26" LocalizableLabelText="@Parameter.Text68"   AuthorizationRight="Parameter" RawLimitMax="99" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Sollwerte.LGO.Abschrecken.Abschreckzeit"/>
+                    <vw:NumericVarOut Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="150,55,215,0" FontSize="26" LocalizableLabelText="@Parameter.Text69"   AuthorizationRight="Parameter" RawLimitMax="99" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Sollwerte.ALO.Abschrecken.Abschreckzeit"/>
+                    <vw:NumericVarOut Width="80" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="150,100,215,10" FontSize="26" LocalizableLabelText="@Parameter.Text72"   AuthorizationRight="Parameter" RawLimitMax="99" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Sollwerte.NA_NIO_Abschrecken.Abschreckzeit"/>
+
+                    <vw:NumericVarOut Width="120" Height="128" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,90,0" FontSize="36"  LocalizableUnitText="@Einheiten.sek" AuthorizationRight="Parameter" RawLimitMax="59" TextAlignment="Center" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Istwerte.Abschrecken.Abschrecken"/>
+
+                </Grid>
+            </vw:GroupBox>
+
+            <UC:TV_R HorizontalAlignment="Left" VerticalAlignment="Top" Margin="723,241,0,0" Param="Text34*5*2"
+                     Base="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Status_Platz.belegt" 
+                     Rack1Visibility="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Status_Platz.Rack1_vorhanden"
+                     Rack2Visibility="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT Prozessdaten.Daten.Status_Platz.Rack2_vorhanden" 
+                     RackStatus="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.LA.DB FW LA HT HMI.Istwerte.Rack Status Textliste" />
+            <UC:TV_R HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1237,241,0,0" Param="Text33*5*1"
+                     Base="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Normal.DB FW HT Prozessdaten.Daten.Status_Platz.belegt" 
+                     Rack1Visibility="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Normal.DB FW HT Prozessdaten.Daten.Status_Platz.Rack1_vorhanden" 
+                     Rack2Visibility="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Normal.DB FW HT Prozessdaten.Daten.Status_Platz.Rack2_vorhanden" 
+                     RackStatus="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Normal.DB FW HT HMI.Istwerte.Rack Status Textliste" />
+            <vw:TextVarOut Height="40" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" Value="{vw:VariableBinding Converter={StaticResource ValueToStateTextConverter}, StateMode=Value, States={StaticResource Fahrwagen}, VariableName=IMEX.PLC.Blocks.22 Fahrwagen.FA.DB FW FA HMI.Istwerte.Fahrwagen.Position Textliste}" Width="660" Margin="0,0,0,200" HorizontalAlignment="Center"/>
+
+            <vw:PictureBox Opacity="0.9" HorizontalAlignment="Left" Width="499" Height="206" VerticalAlignment="Top" Symbol="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.22 Fahrwagen.Luftabschreckung.DB FW LA HMI.Istwerte.Türe Position Textliste, Converter={StaticResource ValueToStateSymbolConverter}, States={StaticResource TransporterDoor}, StateMode=Value}" Margin="624,369,0,0" TouchDown="PictureBox_TouchDown"  Tag="Text34*5*2" />
+
+            <UC:M1_WorkMode HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,10,0,0" 
+                        PowerOn="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Steuerspannung Status Taster"
+                        WorkingModeStatus="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Anzeige_Betriebsart"
+                        Automatic="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Anlage Betriebsart.Automatik"
+                        Hand="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Anlage Betriebsart.Hand"
+                        SetUp="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Anlage Betriebsart.Einrichten"/>
+            <vw:Button Style="{DynamicResource FP_GrayButton_v2}" AuthorizationRight="OilPump" Width="120" Height="80"  Text="Oil Pump" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_6"  SymbolHorizontalAlignment="Center" Margin="0,552,1314,0" />
+        </Grid>
+        <Grid Background="{DynamicResource FP_Blue_Gradient}">
+            <Grid.Effect>
+                <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+            </Grid.Effect>
+            <Border Background="{DynamicResource FP_Blue_Gradient}">
+                <Border.Effect>
+                    <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+                </Border.Effect>
+                <vw:TextBlock x:Name="header" LocalizableText="@HandMenu.Text40" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="48" Margin="50,0,0,0" />
+            </Border>
+        </Grid>
+    </Grid>
+</vw:View>

@@ -1,0 +1,78 @@
+﻿<vw:View 
+    x:Class="HMI.Views.MainRegion.MachineOverview.MO_StatusIn"
+	        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	        xmlns:vw="http://inosoft.com/visiwin7"
+    xmlns:UC="clr-namespace:HMI.UserControls" IsVisibleChanged="_IsVisibleChanged" >
+    <Grid Width="1920" Height="1080" Background="{DynamicResource DialogSurroundBrush}">
+
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{DynamicResource TouchKeyboardBorderBrush}" BorderThickness="1" Background="{DynamicResource FP_Dark}" CornerRadius="5">
+            <Border.Effect>
+                <DropShadowEffect Color="{DynamicResource ShadowDarkBottomColor}" />
+            </Border.Effect>
+            <Grid  Margin="10,0,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition MaxHeight="60"  MinHeight="10"/>
+                </Grid.RowDefinitions>
+                <vw:TextBlock x:Name="HeaderText"  HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="16" FontWeight="Bold" LocalizableText="@StatusView.Text32" />
+                <Border Grid.Row="1" CornerRadius="5" Background="{StaticResource MainViewBackgroundBrush}">
+                    <StackPanel Width="800" Margin="10">
+                        <vw:GroupBox HeaderText="Header" Style="{DynamicResource GroupBoxStyle}" LocalizableHeaderText="@StatusView.Text1">
+                            <Grid Margin="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <vw:TextVarOut x:Name="data1" Width="550" Height="40" HorizontalAlignment="Right" VariableName="__UNLINKED_BSTR" LocalizableLabelText="@StatusView.Text4" Loaded="Data1_Loaded" TextLengthMax="20" TextLengthMin="5"  AuthorizationRight="Start"/>
+                                <vw:TextVarIn x:Name="data2" Width="550" Height="40" HorizontalAlignment="Right" VariableName="__UNLINKED_BSTR" LocalizableLabelText="@Datapicker.Text8" Grid.Row="1" TextLengthMax="20" TextLengthMin="2" Margin="0,10,0,0"  WriteValueCompleted="Data2_WriteValueCompleted" AuthorizationRight="Start" ValueChanged="Data2_ValueChanged" IsEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.Data to PC.MR loading enable}"/>
+                                <vw:TextVarOut x:Name="mr" Width="550" Height="40" HorizontalAlignment="Right"  VariableName="__UNLINKED_BSTR"  PreviewTouchDown="Mr_TouchDown" LocalizableLabelText="@Datapicker.Text2" PreviewMouseLeftButtonDown="Mr_MouseDoubleClick" Grid.Row="2"/>
+                                <vw:TextVarOut x:Name="rd" Width="550" Height="40" HorizontalAlignment="Right" VariableName="__UNLINKED_BSTR"  LocalizableLabelText="@Datapicker.Text3" Grid.Row="3"/>
+                                <vw:TextVarOut x:Name="user" Width="550" Height="40" HorizontalAlignment="Right" VariableName="__UNLINKED_BSTR"  LocalizableLabelText="@Datapicker.Text4"  Grid.Row="4"/>
+                                <vw:Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="210"  Background="Transparent" BorderBrush="Transparent" Height="100" FontWeight="Bold" Margin="-5,10,0,0" Grid.Row="2" Grid.RowSpan="2" Click="Button_Click" AuthorizationRight="Start"/>
+                            </Grid>
+                        </vw:GroupBox>
+                        <vw:GroupBox Margin="0,10,0,0" LocalizableHeaderText="@StatusView.Text6" Style="{DynamicResource GroupBoxStyle}">
+                            <Grid Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="0,0,0,0" Grid.Column="1">
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@StatusView.Text19" LocalizableLabelText="@StatusView.Text17" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen LGO 1 Prozessdaten.Daten.Status_Platz.belegt" IsEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Anzeige_Betriebsart, Converter={StaticResource IntToEnabledConverter}}"/>
+
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@StatusView.Text19" LocalizableLabelText="@StatusView.Text7" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.Status_Bearbeitung.Nacharbeit_laeuft" IsEnabled="False"/>
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@Textlists.Ende.Text2" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text8" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.LGO_Status.Heizen_Ende" IsEnabled="False"/>
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text9" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.LGO_Status.Abschrecken_Ende" IsEnabled="False"/>
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text10" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.ALO_Status.Heizen_Ende" IsEnabled="False"/>
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text11" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.ALO_Status.Abschrecken_Ende" IsEnabled="False"/>
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text12" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.NANIO_Abschrecken_Status.Abschrecken_Ende" IsEnabled="False"/>
+                                    <vw:Switch Width="200" Height="40" HorizontalAlignment="Right" Margin="0,10,0,0" LocalizableTextOn="@StatusView.Text18" LocalizableTextOff="@Textlists.Ende.Text3" LocalizableLabelText="@StatusView.Text13" AuthorizationRight="Status" Style="{DynamicResource SwitchStyle_v2}" VariableName="IMEX.PLC.Blocks.HMI.DB PC Status Platz / HMI.Data To Panel.Prozessdaten.LT_Abschrecken_Status.Abschrecken_Ende" IsEnabled="False"/>
+                                </StackPanel>
+                                <UC:OV_R x:Name="R" Width="228" Height="200"  VerticalAlignment="Center" HorizontalAlignment="Center"
+                                         Base="IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen LGO 1 Prozessdaten.Daten.Status_Platz.belegt" 
+                                         Rack1Visibility="IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen LGO 1 Prozessdaten.Daten.Status_Platz.Rack1_vorhanden" 
+                                         Rack2Visibility="IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen LGO 1 Prozessdaten.Daten.Status_Platz.Rack2_vorhanden" 
+                                         RackStatus="IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.Actual value.Rack Status Textliste"/>
+                                <vw:Button Width="160" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" LocalizableText="@StatusView.Text53"  Style="{DynamicResource FP_GrayButton_Green}" AuthorizationRight="Rework" Click="Button_Click_2" Visibility="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.Actual value.Status Button Charge mit Nacharbeit Sichtbarkeit, Converter={StaticResource IntToVisConverter1}}" IsBlinkEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.Actual value.Status Button Charge mit Nacharbeit, Converter={StaticResource IntToBlinkConverter}}"   Margin="0,0,60,0"/>
+                                <vw:Button  Width="160"  Style="{DynamicResource FP_GrayButton}" LocalizableText="@MainOverview.Text43"  Height="40"   VerticalAlignment="Top" HorizontalAlignment="Left" Click="Button_Click_4" AuthorizationRight="Status"/>
+
+                                <Grid Grid.Row="2" Grid.Column="0" Margin="0,10,0,0" Grid.ColumnSpan="2"/>
+                                <vw:Button Width="160" Height="40" HorizontalAlignment="Right" VerticalAlignment="Top"  LocalizableText="@Tasten.Text7"  Style="{DynamicResource FP_GrayButton}" AuthorizationRight="DeleteData" Click="Button_Click_1" Margin="0,0,60,0" />
+                                <vw:Button Width="160" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" LocalizableText="@StatusView.Text51"  Style="{DynamicResource FP_GrayButton_Green}" AuthorizationRight="Withdrawal" Click="Button_Click_3" IsBlinkEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.Actual value.Status Button Entnahme, Converter={StaticResource IntToBlinkConverter}}" Visibility="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.Actual value.Status Button Entnahme Sichtbarkeit, Converter={StaticResource IntToVisConverter1}}"/>
+                            </Grid>
+                        </vw:GroupBox>
+                    </StackPanel>
+                </Border>
+                <vw:Button x:Name="LeftButton" Grid.Row="2"  Width="160" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{DynamicResource FP_BlueButton_v2}"  Margin="0,10,0,10" LocalizableText="@Tasten.Text8" Click="LeftButton_Click" AuthorizationRight="Start"/>
+                <vw:Button x:Name="RightButton" Grid.Row="2" Width="160" Height="40" HorizontalAlignment="Right" VerticalAlignment="Center" Style="{DynamicResource FP_RedButton_v2}"  Margin="0,10,0,10" LocalizableText="@Tasten.Text13" Click="RightButton_Click"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</vw:View>

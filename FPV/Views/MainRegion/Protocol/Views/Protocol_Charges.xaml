@@ -1,0 +1,66 @@
+﻿<vw:View 
+    x:Class="HMI.Views.MainRegion.Protocol.Protocol_Charges"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+    Width="1840" Height="890" Background="{DynamicResource MainViewBackgroundBrush}" >
+    <vw:View.Resources>
+        <Style x:Key="RightAlignStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="TextAlignment" Value="Right" />
+        </Style>
+        <Style x:Key="CenterAlignStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+    </vw:View.Resources>
+    <vw:View.DataContext>
+        <vw:AdapterBinding Name="ProtocolAdapter"/>
+    </vw:View.DataContext>
+   
+    <Grid x:Name="LayoutRoot" Margin="10" IsVisibleChanged="LayoutRoot_IsVisibleChanged">
+        <Grid.Effect>
+            <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+        </Grid.Effect>
+        <DataGrid x:Name="dgv_charges" ItemsSource="{Binding Charges}" BorderThickness="2" SelectedItem="{Binding SelectedCharge, Mode=TwoWay }" AutoGenerateColumns="False" IsReadOnly="True" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="Dgv_charges_SelectionChanged" >
+            <DataGrid.ItemContainerStyle>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="PreviewTouchDown" Handler="Dgr_PreviewTouchDown"/>
+                    <Setter Property="Height" Value="45"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="FontFamily" Value="Segoe UI"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Background" Value="White"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status}" Value="0">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="1">
+                            <Setter Property="Background" Value="{DynamicResource FP_LightGreen_Gradient}"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="2">
+                            <Setter Property="Background" Value="{DynamicResource FP_Yellow_Gradient}"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="3">
+                            <Setter Property="Background" Value="{DynamicResource FP_Red_Gradient}"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.ItemContainerStyle>
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@Protocol.Text13}" Binding="{Binding ChargeNr}" MinWidth="305" ElementStyle="{StaticResource RightAlignStyle}" FontSize="20" FontWeight="SemiBold"/>
+                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@Protocol.Text3}" Binding="{Binding MR}" MinWidth="305" ElementStyle="{StaticResource RightAlignStyle}" FontSize="20" FontWeight="SemiBold"/>
+
+                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@Protocol.Text34}" Binding="{Binding Runs}" MinWidth="120" ElementStyle="{StaticResource RightAlignStyle}" FontSize="20" FontWeight="SemiBold"/>
+                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@Protocol.Text14}" Binding="{Binding Start, StringFormat=dd.MM.yyyy HH:mm:ss}" MinWidth="400" ElementStyle="{StaticResource CenterAlignStyle}" FontSize="20" FontWeight="SemiBold"/>
+                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@Protocol.Text15}" Binding="{Binding End, StringFormat=dd.MM.yyyy HH:mm:ss}" MinWidth="400" ElementStyle="{StaticResource CenterAlignStyle}" FontSize="20" FontWeight="SemiBold"/>
+                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@Protocol.Text4}" Binding="{Binding User}" MinWidth="251" FontSize="20" FontWeight="SemiBold"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <vw:NavigationButton x:Name="ButtonOpenMenu" Style="{DynamicResource FP_FilterButton}" Height="72" Width="80" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="ButtonOpenMenu_Click" AuthorizationRight="Orders" AuthorizationMode="Visibility"/>
+    </Grid>
+</vw:View>

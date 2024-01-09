@@ -1,0 +1,190 @@
+﻿<ResourceDictionary
+	            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <DataTemplate x:Key="O1">
+        <Image Source="/Images/MachineOverview/Oven/O1.png" Stretch="Fill" Width="501" Height="447" />
+    </DataTemplate>
+    <DataTemplate x:Key="O2">
+        <Image Source="/Images/MachineOverview/Oven/O2.png" Stretch="Fill" Width="501" Height="447" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="OT1">
+        <Image Source="/Images/MachineOverview/Door/OT1.png" Stretch="Fill" Width="529" Height="241" />
+    </DataTemplate>
+    <DataTemplate x:Key="OT2">
+        <Image Source="/Images/MachineOverview/Door/OT2.png" Stretch="Fill" Width="529" Height="241" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="OK1">
+        <Image Source="/Images/MachineOverview/Rack/OK1.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="OK2">
+        <Image Source="/Images/MachineOverview/Rack/OK2.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="OK21">
+        <Image Source="/Images/MachineOverview/Rack/OK21.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="OK22">
+        <Image Source="/Images/MachineOverview/Rack/OK22.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="OK3">
+        <Image Source="/Images/MachineOverview/Rack/OK3.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="OK4">
+        <Image Source="/Images/MachineOverview/Rack/OK4.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    
+
+    <DataTemplate x:Key="Transporter">
+        <Image Source="/Images/MachineOverview/Transporter/Transporter.png" Stretch="Fill" Width="1840" Height="890" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="TT1">
+        <Image Source="/Images/MachineOverview/Door/TT1.png" Stretch="Fill" Width="499" Height="206" />
+    </DataTemplate>
+    <DataTemplate x:Key="TT2">
+        <Image Source="/Images/MachineOverview/Door/TT2.png" Stretch="Fill" Width="499" Height="206" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="TL1">
+        <Image Source="/Images/MachineOverview/Louver/Z1.png" Stretch="Fill" Width="145" Height="190" />
+    </DataTemplate>
+    <DataTemplate x:Key="TL2">
+        <Image Source="/Images/MachineOverview/Louver/Z2.png" Stretch="Fill" Width="145" Height="190" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="TK1">
+        <Image Source="/Images/MachineOverview/Rack/TK1.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="TK2">
+        <Image Source="/Images/MachineOverview/Rack/TK2.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="TK3">
+        <Image Source="/Images/MachineOverview/Rack/TK3.png" Stretch="Fill"  Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="TK4">
+        <Image Source="/Images/MachineOverview/Rack/TK4.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="MOT1">
+        <Image Source="/Images/MachineOverview/Layer0/T1.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT2">
+        <Image Source="/Images/MachineOverview/Layer0/T2.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT3">
+        <Image Source="/Images/MachineOverview/Layer0/T3.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT4">
+        <Image Source="/Images/MachineOverview/Layer0/T4.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT5">
+        <Image Source="/Images/MachineOverview/Layer0/T5.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT6">
+        <Image Source="/Images/MachineOverview/Layer0/T6.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT7">
+        <Image Source="/Images/MachineOverview/Layer0/T7.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT8">
+        <Image Source="/Images/MachineOverview/Layer0/T8.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT9">
+        <Image Source="/Images/MachineOverview/Layer0/T9.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT10">
+        <Image Source="/Images/MachineOverview/Layer0/T10.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT11">
+        <Image Source="/Images/MachineOverview/Layer0/T11.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT12">
+        <Image Source="/Images/MachineOverview/Layer0/T12.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT13">
+        <Image Source="/Images/MachineOverview/Layer0/T13.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT14">
+        <Image Source="/Images/MachineOverview/Layer0/T14.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT15">
+        <Image Source="/Images/MachineOverview/Layer0/T15.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT16">
+        <Image Source="/Images/MachineOverview/Layer0/T16.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT17">
+        <Image Source="/Images/MachineOverview/Layer0/T17.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT18">
+        <Image Source="/Images/MachineOverview/Layer0/T18.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT19">
+        <Image Source="/Images/MachineOverview/Layer0/T19.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOT20">
+        <Image Source="/Images/MachineOverview/Layer0/T20.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="MOD1">
+        <Image Source="/Images/MachineOverview/Door/DC.png" Stretch="Fill" Width="95" Height="205" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOD2">
+        <Image Source="/Images/MachineOverview/Door/DO.png" Stretch="Fill" Width="95" Height="205" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="MOTS">
+        <Image Source="/Images/MachineOverview/Layer1/Stairs.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="MOLGO">
+        <Image Source="/Images/MachineOverview/Oven/LGO.png" Stretch="Fill" Width="129" Height="198" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOALO">
+        <Image Source="/Images/MachineOverview/Oven/ALO.png" Stretch="Fill" Width="129" Height="198" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="MORack1">
+        <Image Source="/Images/MachineOverview/Rack/K1.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="MORack2">
+        <Image Source="/Images/MachineOverview/Rack/K2.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="MORack3">
+        <Image Source="/Images/MachineOverview/Rack/K3.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="MORack4">
+        <Image Source="/Images/MachineOverview/Rack/K4.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="MOTL1">
+        <Image Source="/Images/MachineOverview/TL/MNR.png" Stretch="Fill" Width="40" Height="66" />
+    </DataTemplate>
+    <DataTemplate x:Key="MOTL2">
+        <Image Source="/Images/MachineOverview/TL/MR.png" Stretch="Fill" Width="40" Height="66" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="MV_L0">
+        <Image Source="/Images/MV/MV_L0.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MV_L1">
+        <Image Source="/Images/MV/MV_L1.png" Stretch="Fill" Width="1840" Height="1000" />
+    </DataTemplate>
+    <DataTemplate x:Key="MV_FW">
+        <Image Source="/Images/MV/MV_FW.png" Stretch="Fill" Width="332" Height="152" />
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="MO_D">
+        <Image Source="/Images/Oven/MO_D.png" Stretch="Fill" Width="69" Height="95" />
+    </DataTemplate>
+    <DataTemplate x:Key="MO_DL0">
+        <Image Source="/Images/Oven/MO_DL0.png" Stretch="Fill" Width="97" Height="204" />
+    </DataTemplate>
+    <DataTemplate x:Key="MO_DL1">
+        <Image Source="/Images/Oven/MO_DL1.png" Stretch="Fill" Width="77" Height="8" />
+    </DataTemplate>
+</ResourceDictionary>

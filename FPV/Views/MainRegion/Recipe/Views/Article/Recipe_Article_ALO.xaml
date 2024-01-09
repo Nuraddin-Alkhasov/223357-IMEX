@@ -1,0 +1,70 @@
+﻿<vw:View 
+        x:Class="HMI.Views.MainRegion.Recipe.Recipe_Article_ALO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vw="http://inosoft.com/visiwin7"
+        Width="1000" Height="750" >
+
+    <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}"   LocalizableHeaderText="@RecipeSystem.View.Grid.Text1" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="279"/>
+                <RowDefinition Height="130"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <vw:RadioButton  Style="{DynamicResource RadioButtonStyle_v2}" Margin="10" LocalizableLabelText="@RecipeSystem.View.Grid.Text33" IsChecked="True" >
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <vw:NumericVarIn Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text14" LocalizableUnitText="@Einheiten.grad_C" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.OG_Ueberwachung.Temperaturdifferenz" AuthorizationRight="RecipeManagement"/>
+                    <vw:NumericVarIn Grid.Row="1" Width="60" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text16" LocalizableUnitText="@Einheiten.Stunden" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="220,4,0,4" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.OG_Ueberwachung.Zeit.Std" AuthorizationRight="RecipeManagement"  />
+                    <vw:NumericVarIn Grid.Row="1" Width="60" Height="40" HorizontalAlignment="Right" FontSize="14" LocalizableUnitText="@Einheiten.Min" Grid.Column="1" Margin="40,0,70,0" VerticalAlignment="Center" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.OG_Ueberwachung.Zeit.Min" AuthorizationRight="RecipeManagement"/>
+                    <vw:NumericVarIn Grid.Row="2" Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text15" LocalizableUnitText="@Einheiten.grad_C" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.UG_Ueberwachung.Temperaturdifferenz" AuthorizationRight="RecipeManagement"/>
+                    <vw:NumericVarIn Grid.Row="3" Width="60" Height="40" HorizontalAlignment="Left" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text17" LocalizableUnitText="@Einheiten.Stunden" VerticalAlignment="Center" Margin="220,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.UG_Ueberwachung.Zeit.Std" AuthorizationRight="RecipeManagement" />
+                    <vw:NumericVarIn Grid.Row="3" Width="60" Height="40" HorizontalAlignment="Right" Margin="0,0,70,0" FontSize="14" LocalizableUnitText="@Einheiten.Min" Grid.Column="1" VerticalAlignment="Center" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.UG_Ueberwachung.Zeit.Min" AuthorizationRight="RecipeManagement" />
+                </Grid>
+            </vw:RadioButton>
+            <vw:RadioButton  Style="{DynamicResource RadioButtonStyle_v2}" Margin="10" Grid.Column="1" LocalizableLabelText="@RecipeSystem.View.Grid.Text18" >
+                <StackPanel Margin="10">
+                    <vw:NumericVarIn Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text19" LocalizableUnitText="@Einheiten.sek" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.Abschrecken.Transportzeit" AuthorizationRight="RecipeManagement" />
+                    <vw:NumericVarIn Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text20" LocalizableUnitText="@Einheiten.sek" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,10,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.Abschrecken.VZT_Abschrecken" AuthorizationRight="RecipeManagement" />
+                    <vw:NumericVarIn Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text21" LocalizableUnitText="@Einheiten.sek" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,10,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.Abschrecken.Abschreckzeit" AuthorizationRight="RecipeManagement" />
+                    <vw:NumericVarIn Width="164" Height="40" FontSize="14" LocalizableLabelText="@RecipeSystem.View.Grid.Text22" LocalizableUnitText="@Einheiten.%" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,10,70,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.Abschrecken.DZ_Zuluft" AuthorizationRight="RecipeManagement" />
+                </StackPanel>
+            </vw:RadioButton>
+            <vw:RadioButton Style="{DynamicResource RadioButtonStyle_v2}" LocalizableLabelText="@RecipeSystem.View.Grid.Text13" Margin="10" Grid.Column="1" Grid.Row="1">
+                <Grid Margin="10">
+                    <vw:NumericVarIn Grid.Row="2" Width="60" Height="40" HorizontalAlignment="Left" FontSize="14" LocalizableUnitText="@Einheiten.Stunden" VerticalAlignment="Center" Margin="220,0,0,0" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.Wartezeit.Std" AuthorizationRight="RecipeManagement" />
+                    <vw:NumericVarIn Grid.Row="2" Width="60" Height="40" HorizontalAlignment="Right" Margin="0,0,70,0" FontSize="14" LocalizableUnitText="@Einheiten.Min" Grid.Column="1" VerticalAlignment="Center" VariableName="IMEX.PLC.Blocks.HMI.00 PC.DB PC Kommunikation.MR.Stations.ALO.Wartezeit.Min" AuthorizationRight="RecipeManagement" />
+                </Grid>
+            </vw:RadioButton>
+            <Border Background="{DynamicResource FP_Red_Gradient}" Grid.Row="2" CornerRadius="4" Height="6" Grid.ColumnSpan="2" Margin="10" VerticalAlignment="Center" />
+
+
+
+            <vw:PanoramaNavigation Grid.Row="3" Name="pn_R_ALO" Orientation="Horizontal" Grid.ColumnSpan="2" IsManipulationEnabled="False" >
+                <vw:PanoramaNavigation.PanoramaRegions>
+                    <vw:PanoramaRegion StartView="Recipe_Article_ALO_S1" AuthorizationRight="RecipeManagement" />
+                    <vw:PanoramaRegion StartView="Recipe_Article_ALO_S2" AuthorizationRight="RecipeManagement" />
+                </vw:PanoramaNavigation.PanoramaRegions>
+            </vw:PanoramaNavigation>
+            <ListBox Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,2" Opacity="0.8" Grid.ColumnSpan="2"
+                 ItemContainerStyle="{DynamicResource PanoramaNavigationListBoxItemStyle}"  Style="{DynamicResource PanoramaNavigationListBoxStyle}"
+                 SelectedIndex="{Binding SelectedPanoramaRegionIndex, ElementName=pn_R_ALO, Mode=TwoWay, NotifyOnTargetUpdated=True, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}">
+                <vw:ListBoxItem />
+                <vw:ListBoxItem Margin="10,0,0,0" />
+            </ListBox>
+        </Grid>
+    </vw:GroupBox>
+</vw:View>

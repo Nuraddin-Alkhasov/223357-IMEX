@@ -1,0 +1,20 @@
+﻿<vw:View x:Class="HMI.Handmenu.LGO.H_LGO3_Tür_PN"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+     Width="1840" Height="890" Background="{DynamicResource MainViewBackgroundBrush}" IsVisibleChanged="View_IsVisibleChanged">
+    <Grid>
+        <vw:PanoramaNavigation  Name="pn_H_LGO3_Tür" Orientation="Vertical" IsManipulationEnabled="False" PreviewMouseDoubleClick="Pn_H_LGO3_PreviewMouseDoubleClick">
+        <vw:PanoramaNavigation.PanoramaRegions>
+                <vw:PanoramaRegion StartView="H_LGO3" AuthorizationRight="ManualDrive"/>
+            <vw:PanoramaRegion StartView="H_LGO3_Service" AuthorizationRight="Service"/>
+        </vw:PanoramaNavigation.PanoramaRegions>
+    </vw:PanoramaNavigation>
+    <ListBox Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,0,10" Opacity="0.8"
+                 ItemContainerStyle="{DynamicResource PanoramaNavigationVerticalStyle}"  Style="{DynamicResource PanoramaNavigationListBoxVerticalStyle}"
+                 SelectedIndex="{Binding SelectedPanoramaRegionIndex, ElementName=pn_H_LGO3_Tür, Mode=TwoWay, NotifyOnTargetUpdated=True, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}">
+        <vw:ListBoxItem />
+        <vw:ListBoxItem Margin="0,10,0,0" />
+    </ListBox>
+    </Grid>
+</vw:View>

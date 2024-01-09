@@ -1,0 +1,67 @@
+﻿<vw:View 
+        x:Class="HMI.Views.MainRegion.H_Fahrwagen_OP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vw="http://inosoft.com/visiwin7"
+        Width="1000" Height="750" >
+
+    <vw:GroupBox   Style="{DynamicResource GroupBoxStyle}"   HeaderText="Test" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <vw:RadioButton  Style="{DynamicResource RadioButtonStyle_v2}" Margin="10" Text="Lifting">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <vw:NumericVarIn Width="160" Height="40" FontSize="14" AuthorizationRight="OilPump" LabelText="Oil flow at Positioning" HorizontalAlignment="Right" VerticalAlignment="Center" UnitText="At Startup 60" Margin="0,0,100,0" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Test julio.Heben Ölfluss Positionieren"/>
+                    <vw:NumericVarIn Grid.Row="1" Width="160" Height="40"  AuthorizationRight="OilPump" FontSize="14" LabelText="Oil flow at slow Range"  HorizontalAlignment="Right" VerticalAlignment="Center" UnitText="At Startup 60" Margin="0,0,100,0" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Test julio.Heben Ölfluss langsam" />
+                </Grid>
+            </vw:RadioButton>
+            <vw:RadioButton  Style="{DynamicResource RadioButtonStyle_v2}" Margin="10" Text="Position Window at Startup both at 1.5" Grid.Row="1" >
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <vw:NumericVarIn Width="160" FormatString="{}0.00" AuthorizationRight="OilPump" Height="40" FontSize="14" LabelText="Upper limit" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,10,100,0" UnitText="At Startup 60" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Test julio.Positionsfentser OG" />
+                    <vw:NumericVarIn Width="160" FormatString="{}0.00" AuthorizationRight="OilPump" Grid.Row="1" Height="40" FontSize="14" LabelText="Lower limit" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,10,100,0" UnitText="At Startup 40" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Test julio.Positionsfenster UG" />
+                </Grid>
+            </vw:RadioButton>
+            <vw:RadioButton  Style="{DynamicResource RadioButtonStyle_v2}" Text="Integral Ramp Speed Up! Be Carefull! 0.7 at Startup!" Margin="10" Grid.Row="3" Grid.ColumnSpan="2">
+                <Grid Margin="10" Height="50">
+                    <vw:NumericVarIn Width="160" FormatString="{}0.00" AuthorizationRight="OilPump" Height="40" HorizontalAlignment="Center" FontSize="14"  VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Test julio.Beschleunigungs Faktor"/>
+                    <vw:PictureBox SymbolResourceKey="MBExclamationIcon" HorizontalAlignment="Right" IsBlinkEnabled="True" BlinkMode="Visibility" Width="74" Margin="0,-12,242,-12"/>
+
+                </Grid>
+            </vw:RadioButton>
+
+            <Border Background="{DynamicResource FP_Red_Gradient}" Grid.Row="2" CornerRadius="4" Height="6" Grid.ColumnSpan="2" Margin="10" VerticalAlignment="Center" />
+
+
+
+
+
+            <vw:RadioButton  Style="{DynamicResource RadioButtonStyle_v2}" Margin="10" Text="Lowering" Grid.Row="0" Grid.Column="1">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <vw:NumericVarIn Width="160" Height="40" FontSize="14" AuthorizationRight="OilPump" LabelText="Oil flow at Positioning" UnitText="At Startup 60"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,0" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Test julio.Senken Ölfluss Positioniren"/>
+                    <vw:NumericVarIn Grid.Row="1" Width="160" Height="40" AuthorizationRight="OilPump" FontSize="14" LabelText="Oil flow at slow Range" UnitText="At Startup 40"   HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,0" VariableName="IMEX.PLC.Blocks.22 Fahrwagen.Hubtische.Test julio.Senken Ölfluss langsam"  />
+                </Grid>
+            </vw:RadioButton>
+        </Grid>
+    </vw:GroupBox>
+</vw:View>

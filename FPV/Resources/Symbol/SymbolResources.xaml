@@ -1,0 +1,112 @@
+﻿<ResourceDictionary
+	            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Einträge ins SymbolResourceDictionary sollten hier erfolgen -->
+
+   
+
+    <DataTemplate x:Key="Dashboard">
+        <Image Source="/Images/Dashboard.png" Stretch="Fill" Width="400" Height="142" />
+    </DataTemplate>
+    <DataTemplate x:Key="Splashscreen">
+        <Image Source="/Images/Splashscreen.png" Stretch="Fill" Width="510" Height="180" />
+    </DataTemplate>
+    <DataTemplate x:Key="HeaderRegion">
+        <Image Source="/Images/HeaderRegion.png" Stretch="Fill" Width="100" Height="38" />
+    </DataTemplate>
+    <DataTemplate x:Key="Loading">
+        <Image Source="/Images/Loading.gif" Stretch="Fill" Width="188" Height="96" />
+    </DataTemplate>
+
+   
+    <DataTemplate x:Key="R_ALO">
+        <Image Source="/Images/Recipe/R_ALO.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+    <DataTemplate x:Key="R_LGO">
+        <Image Source="/Images/Recipe/R_LGO.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="R_NIO">
+        <Image Source="/Images/Recipe/R_NIO.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="HM_In">
+        <Image Source="/Images/HandMenu/In.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+    <DataTemplate x:Key="HM_Out">
+        <Image Source="/Images/HandMenu/Out.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+    <DataTemplate x:Key="HM_Transport">
+        <Image Source="/Images/HandMenu/Transport.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="B_Ventilator">
+        <Image Source="/Images/Betriebstunden/Ventilator.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="MOP">
+        <Image Source="/Images/MobilePanel.png" Stretch="Fill" Width="80" Height="80" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="D_Add">
+        <Image Source="/Images/Dashboard/Add.png" Stretch="Fill" Width="60" Height="60" />
+    </DataTemplate>
+    <DataTemplate x:Key="D_Edit">
+        <Image Source="/Images/Dashboard/Edit.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="D_Delete">
+        <Image Source="/Images/Dashboard/Delete.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="D_Drag">
+        <Image Source="/Images/Dashboard/Drag.png" Stretch="Fill" Width="55" Height="55" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="DT_Up">
+        <Image Source="/Images/DT/DT_Up.png" Stretch="Fill" Width="74" Height="50" />
+    </DataTemplate>
+    <DataTemplate x:Key="DT_Down">
+        <Image Source="/Images/DT/DT_Down.png" Stretch="Fill" Width="74" Height="50" />
+    </DataTemplate>
+
+
+
+    <DataTemplate x:Key="Ventilator">
+        <Image Source="/Images/HandMenu/Ventilator.png" Stretch="Fill" Width="259" Height="260" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="ReportingArrowLeft">
+        <Image Source="/Images/Reporting/reporting.arrow.left.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="ReportingArrowLeftM">
+        <Image Source="/Images/Reporting/reporting.arrow.leftm.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="ReportingArrowRight">
+        <Image Source="/Images/Reporting/reporting.arrow.rigt.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="ReportingArrowRightM">
+        <Image Source="/Images/Reporting/reporting.arrow.rigtm.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="ReportingPrint">
+        <Image Source="/Images/Reporting/reporting.printer.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="ReportingLayout">
+        <Image Source="/Images/Reporting/reporting.layout.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="ReportingCog">
+        <Image Source="/Images/Reporting/reporting.cog.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+    <DataTemplate x:Key="ReportingSave">
+        <Image Source="/Images/Reporting/reporting.save.png" Stretch="Fill" Width="40" Height="40" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="Motor">
+        <Image Source="/Images/HandMenu/Motor.png" Stretch="Fill" Width="84" Height="50" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="G1">
+        <Image Source="/Images/G/G1.png" Stretch="Fill" Width="47" Height="60" />
+    </DataTemplate>
+    <DataTemplate x:Key="G2">
+        <Image Source="/Images/G/G2.png" Stretch="Fill" Width="53" Height="60" />
+    </DataTemplate>
+</ResourceDictionary>

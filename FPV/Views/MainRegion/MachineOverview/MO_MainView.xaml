@@ -1,0 +1,43 @@
+﻿<vw:View
+	x:Class="HMI.Views.MainRegion.MachineOverview.MO_MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:vw="http://inosoft.com/visiwin7"
+    xmlns:UC="clr-namespace:HMI.UserControls"
+    Background="{DynamicResource MainViewBackgroundBrush}" Width="1840" Height="1000">
+
+    <Grid x:Name="LayoutRoot" >
+        <vw:Region x:Name="Reg" Loaded="Reg_Loaded" />
+
+
+        <UC:M1_WorkMode HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,10,0,0" 
+                        PowerOn="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Steuerspannung Status Taster"
+                        WorkingModeStatus="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Anzeige_Betriebsart"
+                        Automatic="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Anlage Betriebsart.Automatik"
+                        Hand="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Anlage Betriebsart.Hand"
+                        SetUp="IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Anlage Betriebsart.Einrichten"/>
+        <vw:Key Width="160" Height="120" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,15" LocalizableText="@Tasten.Start"  Style="{DynamicResource FP_GrayButton_Green}" AuthorizationRight="Start" FontSize="25" FontWeight="Bold" Click="Button_Click_5" KeyMode="KeyMode" VariableName="IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.PC.Allgemein.Charge Start" IsBlinkEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.Actual value.Status Button Charge Start, Converter={StaticResource IntToBlinkConverter}}" IsDefault="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.21 Aus- Einschleussen.Ein.DB Einschleusen HMI.Actual value.Status Button Charge Start, Converter={StaticResource IntToBlinkConverterMOF}}"/>
+
+        <Grid x:Name="powerOFF" Background="{DynamicResource DialogSurroundBrush}" Visibility="Hidden">
+            <Border Width="1000" Height="400" Background="{DynamicResource FP_Yellow}" BorderThickness="10" BorderBrush="{DynamicResource FP_Dark}"/>
+            <vw:TextBlock FontSize="24" FontWeight="Bold" Margin="0,340,0,0" Width="450" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" LocalizableText="@MainOverview.Text26"/>
+            <vw:TextBlock Height="65" FontSize="24" FontWeight="Bold" Margin="0,0,0,340" Width="640" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Bottom" LocalizableText="@MainOverview.Text27"/>
+            <ProgressBar HorizontalAlignment="Center" Height="100" Margin="0" VerticalAlignment="Center" Width="950" Style="{DynamicResource ProgressBarStyle}" Foreground="{DynamicResource FP_Red}" BorderBrush="Black" BorderThickness="3" Minimum="0" Maximum="500" Value="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Zeit bis Stuerspannung aus}"/>
+        </Grid>
+        <vw:Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="280" Height="180" Margin="15,796,0,24" BorderThickness="5" BorderBrush="{DynamicResource FP_Dark}" >
+            <Grid Background="{DynamicResource FP_Yellow}">
+                <vw:Key x:Name="ONOFF"  LocalizableText="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Steuerspannung Status Taster, Converter={StaticResource ValueToStateTextConverter}, States={StaticResource M_Ein / Aus}, StateMode=Value}"  Width="180" Height="80" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Steuerspannung Status Taster, Converter={StaticResource ValueToStateBrushConverter}, States={StaticResource MachineONOFF}, StateMode=Value}" Style="{DynamicResource FP_GrayButton}" BlinkBrush="{DynamicResource FP_Gray_Gradient}" IsBlinkEnabled="{vw:VariableBinding VariableName=IMEX.PLC.Blocks.HMI.DB HMI Allgemein.Status an BP.Steuerspannung Status Taster, Converter={StaticResource IntToBlinkConverterMOF}}" KeyMode="KeyMode" FontSize="20" FontWeight="Bold" AuthorizationRight="Power" />
+            </Grid>
+        </vw:Border>
+        <vw:GroupBox  Style="{DynamicResource GroupBoxStyle}" Margin="10" Grid.Column="1" LocalizableHeaderText="@MainOverview.Text10"  Width="240" HorizontalAlignment="Center" VerticalAlignment="Bottom" >
+            <StackPanel >
+                <vw:RadioButton LocalizableLabelText="@MainOverview.Text11" Margin="20,5,0,0"  IsEnabled="False" Style="{DynamicResource RB_LegendStyle}" Background="#cbcbcb"/>
+                <vw:RadioButton LocalizableLabelText="@MainOverview.Text12" Margin="20,5,0,0" IsEnabled="False" Style="{DynamicResource RB_LegendStyle}"  Background="#dcae34"/>
+                <vw:RadioButton LocalizableLabelText="@MainOverview.Text13" Margin="20,5,0,0" IsEnabled="False" Style="{DynamicResource RB_LegendStyle}"  Background="#ef5ff3"/>
+                <vw:RadioButton LocalizableLabelText="@MainOverview.Text16" Margin="20,5,0,0" IsEnabled="False" Style="{DynamicResource RB_LegendStyle}"  Background="#15a415"/>
+                <vw:RadioButton LocalizableLabelText="@MainOverview.Text17" Margin="20,5,0,0" IsEnabled="False" Style="{DynamicResource RB_LegendStyle}"  Background="#f7ff03"/>
+                <vw:RadioButton LocalizableLabelText="@MainOverview.Text18" Margin="20,5,0,5" IsEnabled="False" Style="{DynamicResource RB_LegendStyle}"  Background="#d21515"/>
+            </StackPanel>
+        </vw:GroupBox>
+    </Grid>
+</vw:View>

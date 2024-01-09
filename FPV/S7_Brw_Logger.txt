@@ -1,0 +1,328 @@
+System information:
+Version                                  | VisiWin7 7.2
+Framework                                | DotNet
+Project                                  | Single
+VisiWin.S7_TIA.Brw.dll           | 3.0.1.50(Debug=False)
+VisiWin.Browser.Components.Shared.dll | 7.0.0.37(Debug=False)
+
+Messages
+4/23/2020 4:21:08 PM   | Message | Attention: Some items in the PLC project contain special characters. | TIAParser.FormatName() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.HMI Station Data" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD LGO 1" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD LGO 2" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD LGO 3" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD ALO 1" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD ALO 2" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD ALO 3" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD ALO 4" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD ALO 5" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD ALO 6" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD ALO 7" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD In" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP ALO 1" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP ALO 2" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP LGO 2" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP ALO 3" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP ALO 4" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP LGO 3" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP ALO 5" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD AP ALO 6" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD Out" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD Transporter HT" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "PLC.Blocks.HMI.Prozessdaten kopieren.PD Transporter HT LA" is not supported! | TIAParser.CreateItemInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB PC Daten Aufbereiten Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB PC Daten Aufbereiten Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB PC Daten Aufbereiten Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 3 Allgmein.LGO 3 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 2 Allgmein.LGO 2 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB LGO 1 Allgemein.LGO 1 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Jumo Ofen 1 - 10 Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Jumo Ofen 1 - 10 Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Jumo Ofen 1 - 10 Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"HMI Station Data"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD LGO 1"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD LGO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD LGO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD ALO 1"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD ALO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD ALO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD ALO 4"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD ALO 5"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD ALO 6"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD ALO 7"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD In"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP ALO 1"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP ALO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP LGO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP ALO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP ALO 4"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP LGO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP ALO 5"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD AP ALO 6"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD Out"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD Transporter HT"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Status Platz"PD Transporter HT LA"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"HMI TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"LGO 1 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"LGO 2 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"LGO 3 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"ALO 1 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"ALO 2 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"ALO 3 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"ALO 4 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"ALO 5 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"ALO 6 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Zeitschaltuhr HMI"ALO 7 TS"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.User SyncBenutzer" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"HMI Station Data"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD LGO 1"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD LGO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD LGO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD ALO 1"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD ALO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD ALO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD ALO 4"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD ALO 5"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD ALO 6"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD ALO 7"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD In"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP ALO 1"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP ALO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP LGO 2"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP ALO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP ALO 4"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP LGO 3"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP ALO 5"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD AP ALO 6"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD Out"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD Transporter HT"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB HMI Allgemein.Prozessdaten kopieren"PD Transporter HT LA"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB FW Allgemein.FW LA HT Positionen / Bereiche.TR SeilzuggeberStörungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_RFC_IDB FW Allgemein.FW LA HT Positionen / Bereiche.TR Seilzuggeber.Referenz Schreiben IDBRECORD" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_RFC_IDB FW Allgemein.FW LA HT Positionen / Bereiche.TR Seilzuggeber.Störungen lesen IDBRECORD" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB FW Allgemein.FW HT Positionen / Bereiche.TR SeilzuggeberStörungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_RFC_IDB FW Allgemein.FW HT Positionen / Bereiche.TR Seilzuggeber.Referenz Schreiben IDBRECORD" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_RFC_IDB FW Allgemein.FW HT Positionen / Bereiche.TR Seilzuggeber.Störungen lesen IDBRECORD" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW FA Befehlsausgabe.Wechsel fahren nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW FA Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW FA Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW FA Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW HY HT Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW HY HT Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW HY HT Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW LA HT Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW LA HT Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW LA HT Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW HT Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW HT Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW HT Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW LA Venti Schieber Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW LA Venti Schieber Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB FW Allgemein.FW LA Venti Schieber Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_IDB Einschleusen Befehlsausgabe.RB SI6 Positionierungsbaustein Einschleusenactual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_IDB Einschleusen Befehlsausgabe.RB SI6 Positionierungsbaustein Einschleusensetpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB Einschleusen Befehlsausgabe.RB SI6 Positionierungsbaustein EinschleusenBetriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_IDB Ausschleusen Befehlsausgabe.RB SI6 Positionierungsbaustein Ausschleussenactual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_IDB Ausschleusen Befehlsausgabe.RB SI6 Positionierungsbaustein Ausschleussensetpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_IDB Ausschleusen Befehlsausgabe.RB SI6 Positionierungsbaustein AusschleussenBetriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 7 Allgmein.ALO 7 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 6 Allgmein.ALO 6 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 5 Allgmein.ALO 5 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 4 Allgmein.ALO 4 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 3 Allgmein.ALO 3 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 2 Allgmein.ALO 2 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Türe Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Türe Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Türe Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Türe Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Türe Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Türe Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Heizung Venti Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Heizung Venti Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Heizung Venti Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Heizung Venti Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Heizung Venti Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Heizung Venti Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Türe Befehelsausgabe.Wechsel fahre nach"Fahre nach Aufträge"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Allgemein Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Allgemein Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB ALO 1 Allgmein.ALO 1 Allgemein Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allgemein Gesamte Anlage Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allgemein Gesamte Anlage Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allgemein Gesamte Anlage Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allg. Abluft der Öfen Störerfassung.IDB Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allg. Abluft der Öfen Störerfassung.IDB Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allg. Abluft der Öfen Störerfassung.IDB SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allg. Abluft der Öfen Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allg. Abluft der Öfen Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_IDB Allg. Abluft der Öfen Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Sammelmeldung"Störungen ohne Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Sammelmeldung"Störung Teilstart"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Any" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.SammelmeldungBedienerführungen" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung LGO 3"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung LGO 2"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung ALO 6"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung ALO 5"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung ALO 4"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung ALO 3"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung ALO 2"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Störerfassung.Umrichterstörung ALO 1"Anstehende Meldungen"" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein LGO 3actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein LGO 3setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein LGO 3Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein LGO 2actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein LGO 2setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein LGO 2Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 6actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 6setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 6Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 5actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 5setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 5Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 4actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 4setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 4Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 3actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 3setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 3Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 2actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 2setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 2Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 1actual_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Variant" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 1setpoint_values" is not supported! | TIAParser.CreateMemberInfo() | 
+4/23/2020 4:21:09 PM   | Message | Datatype "S7_Pointer" of item "RFC_RFC_IDB Abstellplätze Allgemein.Abstellplätze Befehlsausgabe.RB SI6 Positionierungsbaustein ALO 1Betriebsstundenzähler" is not supported! | TIAParser.CreateMemberInfo() | 

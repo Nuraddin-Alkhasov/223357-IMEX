@@ -1,0 +1,40 @@
+﻿<vw:View x:Class="HMI.Parameter.ALO.P_ALO"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vw="http://inosoft.com/visiwin7"
+    Width="1840" Height="1000" Background="{DynamicResource MainViewBackgroundBrush}" >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{DynamicResource FP_Blue_Gradient}" Grid.ColumnSpan="3">
+            <Grid.Effect>
+                <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+            </Grid.Effect>
+            <Border Background="{DynamicResource FP_Blue_Gradient}">
+                <Border.Effect>
+                    <DropShadowEffect Color="{DynamicResource FP_Gray_C}" />
+                </Border.Effect>
+                <vw:TextBlock x:Name="header" LocalizableText="@Parameter.Text7" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="48" Margin="50,0,0,0" />
+            </Border>
+        </Grid>
+        <vw:RadioButton x:Name="btnALO1" Grid.Row="1" Width="200" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}" LocalizableText="@Parameter.Text8" Loaded="btnALO1_Loaded" Checked="btnALO1_Checked" AuthorizationRight="Parameter"/>
+        <vw:RadioButton x:Name="btnALO2" Grid.Row="2" Width="200" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}" LocalizableText="@Parameter.Text9" Checked="btnALO2_Checked" AuthorizationRight="Parameter"/>
+        <vw:RadioButton x:Name="btnALO3" Grid.Row="3" Width="200" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}" LocalizableText="@Parameter.Text10" Checked="btnALO3_Checked" AuthorizationRight="Parameter"/>
+        <vw:RadioButton x:Name="btnALO4" Grid.Row="4" Width="200" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}" LocalizableText="@Parameter.Text11" Checked="btnALO4_Checked" AuthorizationRight="Parameter"/>
+        <vw:RadioButton x:Name="btnALO5" Grid.Column="2" Grid.Row="1" Width="200" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}" LocalizableText="@Parameter.Text12" Checked="btnALO5_Checked" AuthorizationRight="Parameter"/>
+        <vw:RadioButton x:Name="btnALO6" Grid.Column="2" Grid.Row="2" Width="200" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}" LocalizableText="@Parameter.Text13" Checked="btnALO6_Checked" AuthorizationRight="Parameter"/>
+        <vw:RadioButton x:Name="btnALO7" Grid.Column="2" Grid.Row="3" Width="200" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center"  Style="{DynamicResource RadioButtonStyle}" LocalizableText="@Parameter.Text14" Checked="btnALO7_Checked" AuthorizationRight="Parameter"/>
+        <vw:Region x:Name="Reg" Grid.Column="1" Grid.Row="1" Grid.RowSpan="4" />
+    </Grid>
+</vw:View>

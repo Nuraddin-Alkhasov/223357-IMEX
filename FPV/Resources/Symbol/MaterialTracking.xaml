@@ -1,0 +1,132 @@
+﻿<ResourceDictionary
+	            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DataTemplate x:Key="R1">
+        <Image Source="/Images/MaterialTracking/Rack/1.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R2">
+        <Image Source="/Images/MaterialTracking/Rack/2.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R3">
+        <Image Source="/Images/MaterialTracking/Rack/3.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="R12">
+        <Image Source="/Images/MaterialTracking/Rack/R12.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R13">
+        <Image Source="/Images/MaterialTracking/Rack/R13.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R14">
+        <Image Source="/Images/MaterialTracking/Rack/R14.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R15">
+        <Image Source="/Images/MaterialTracking/Rack/R15.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R16">
+        <Image Source="/Images/MaterialTracking/Rack/R16.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R17">
+        <Image Source="/Images/MaterialTracking/Rack/R17.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+
+
+
+    <DataTemplate x:Key="R22">
+        <Image Source="/Images/MaterialTracking/Rack/R22.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R23">
+        <Image Source="/Images/MaterialTracking/Rack/R23.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R24">
+        <Image Source="/Images/MaterialTracking/Rack/R24.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R25">
+        <Image Source="/Images/MaterialTracking/Rack/R25.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R26">
+        <Image Source="/Images/MaterialTracking/Rack/R26.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    <DataTemplate x:Key="R27">
+        <Image Source="/Images/MaterialTracking/Rack/R27.png" Stretch="Fill" Width="46" Height="108" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="R32">
+        <Image Source="/Images/MaterialTracking/Rack/R32.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R33">
+        <Image Source="/Images/MaterialTracking/Rack/R33.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R34">
+        <Image Source="/Images/MaterialTracking/Rack/R34.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R35">
+        <Image Source="/Images/MaterialTracking/Rack/R35.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R36">
+        <Image Source="/Images/MaterialTracking/Rack/R36.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R37">
+        <Image Source="/Images/MaterialTracking/Rack/R37.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+
+
+    <DataTemplate x:Key="R42">
+        <Image Source="/Images/MaterialTracking/Rack/R42.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R43">
+        <Image Source="/Images/MaterialTracking/Rack/R43.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R44">
+        <Image Source="/Images/MaterialTracking/Rack/R44.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R45">
+        <Image Source="/Images/MaterialTracking/Rack/R45.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R46">
+        <Image Source="/Images/MaterialTracking/Rack/R46.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    <DataTemplate x:Key="R47">
+        <Image Source="/Images/MaterialTracking/Rack/R47.png" Stretch="Fill" Width="228" Height="200" />
+    </DataTemplate>
+    
+    <DataTemplate x:Key="R52">
+        <Image Source="/Images/MaterialTracking/Rack/R52.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R53">
+        <Image Source="/Images/MaterialTracking/Rack/R53.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R54">
+        <Image Source="/Images/MaterialTracking/Rack/R54.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R55">
+        <Image Source="/Images/MaterialTracking/Rack/R55.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R56">
+        <Image Source="/Images/MaterialTracking/Rack/R56.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R57">
+        <Image Source="/Images/MaterialTracking/Rack/R57.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="R62">
+        <Image Source="/Images/MaterialTracking/Rack/R62.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R63">
+        <Image Source="/Images/MaterialTracking/Rack/R63.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R64">
+        <Image Source="/Images/MaterialTracking/Rack/R64.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R65">
+        <Image Source="/Images/MaterialTracking/Rack/R65.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R66">
+        <Image Source="/Images/MaterialTracking/Rack/R66.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+    <DataTemplate x:Key="R67">
+        <Image Source="/Images/MaterialTracking/Rack/R67.png" Stretch="Fill" Width="168" Height="310" />
+    </DataTemplate>
+
+</ResourceDictionary>

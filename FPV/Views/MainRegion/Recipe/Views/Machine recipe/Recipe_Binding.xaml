@@ -1,0 +1,77 @@
+﻿<vw:View 
+        x:Class="HMI.Views.MainRegion.Recipe.Recipe_Binding"
+	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	    xmlns:vw="http://inosoft.com/visiwin7" 
+        xmlns:local="clr-namespace:HMI.Views.MainRegion.Recipe.Adapters"
+	    Width="1920" Height="1080" Background="{DynamicResource DialogSurroundBrush}" >
+    <vw:View.DataContext>
+        <local:RecipeBindingAdapter/>
+    </vw:View.DataContext>
+    <Grid>
+        <vw:Button Background="Transparent" BorderThickness="0" Command="{Binding CloseDialogViewCommand}"/>
+
+        <Border  Width="1058" Height="600"  HorizontalAlignment="Center" BorderBrush="{DynamicResource TouchKeyboardBorderBrush}" BorderThickness="1" Background="{DynamicResource FP_Dark}" CornerRadius="5">
+            <Border.Effect>
+                <DropShadowEffect Color="{DynamicResource ShadowDarkBottomColor}" />
+            </Border.Effect>
+            <Grid Margin="10,0,10,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <vw:TextBlock x:Name="HeaderText" LocalizableText="{Binding HeaderLocalizableText}" Text="{Binding HeaderText}" HorizontalAlignment="Left" Foreground="White" FontSize="16" FontWeight="Bold" />
+                <vw:Button x:Name="CancelButton" HorizontalAlignment="Right" VerticalAlignment="Top" Command="{Binding CloseDialogViewCommand}" Style="{DynamicResource CloseButton}" Width="60" Height="40" Text="X" Margin="0,-1,0,0"/>
+                <Border Grid.Row="1" CornerRadius="5" Background="{StaticResource MainViewBackgroundBrush}" >
+                    <Grid Margin="10,10,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="180"/>
+                        </Grid.ColumnDefinitions>
+                        <DataGrid x:Name="dgv_bctor" ItemsSource="{Binding BCToMRList}" SelectedItem="{Binding SelectedData, Mode=TwoWay }" AutoGenerateColumns="False" IsReadOnly="True" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                            <DataGrid.ItemContainerStyle>
+                                <Style TargetType="DataGridRow">
+                                    <EventSetter Event="PreviewTouchDown" Handler="_PreviewTouchDown"/>
+                                    <Setter Property="Height" Value="45"/>
+                                </Style>
+                            </DataGrid.ItemContainerStyle>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@RecipeSystem.View.Grid.Text34}" Binding="{Binding Barcode}" Width="300"/>
+                                <DataGridTextColumn Header="{vw:LocalizedTextBinding LocalizableText=@RecipeSystem.View.Grid.Text5}" Binding="{Binding MR}" Width="508"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <vw:Button x:Name="btnDelete" Text="Löschen" Height="50"  Width="160"  LocalizableText="@RecipeSystem.View.Buttons.Delete" IsEnabled="{Binding isBCToMRSelected}" Command="{Binding DeleteCommand}"  Style="{DynamicResource FP_RedButton}" Grid.Row="3" AuthorizationRight="RecipeManagement"/>
+                            <vw:Button x:Name="btnNew"  Command="{Binding NewCommand}" Height="50"  Width="160" LocalizableText="@Tasten.neue" Style="{DynamicResource FP_BlueButton}" Grid.Row="0" AuthorizationRight="RecipeManagement" />
+                            <vw:Button x:Name="btnEdit" Command="{Binding EditCommand}" Height="50"  Width="160" LocalizableText="@Tasten.Editieren" Style="{DynamicResource FP_BlueButton}" Grid.Row="1" IsEnabled="{Binding isBCToMRSelected}" AuthorizationRight="RecipeManagement" />
+                        </Grid>
+                        <Grid x:Name="dataedit" Background="{DynamicResource DialogSurroundBrush}" Visibility="{Binding DialogVisible}" >
+                            <Grid Height="300" Width="600">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="55"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Border Background="{DynamicResource FP_Dark}" Grid.RowSpan="5"/>
+                                <Grid Background="{DynamicResource FP_Yellow}">
+                                    <vw:TextBlock LocalizableText="@RecipeSystem.View.Grid.Text35" Margin="10,0,0,0" FontSize="20" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                                </Grid>
+                                <vw:TextVarOut x:Name="mr"  Width="400" Height="50" Value="{Binding SelectedData.MR, Mode=TwoWay }" LocalizableLabelText="@RecipeSystem.View.Grid.Text5" Foreground="White" Background="{DynamicResource FP_Dark}" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,20,0" VariableName="__UNLINKED_BSTR" PreviewMouseLeftButtonDown="TextVarOut_PreviewMouseLeftButtonDown" AuthorizationRight="RecipeManagement"/>
+                                <vw:TextVarIn x:Name="barcode" Width="400" Height="50" Value="{Binding SelectedData.Barcode, Mode=TwoWay }" LocalizableLabelText="@RecipeSystem.View.Grid.Text34" Foreground="White" Background="{DynamicResource FP_Dark}" Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,20,0" VariableName="__UNLINKED_BSTR" AuthorizationRight="RecipeManagement" Loaded="Barcode_Loaded"/>
+                                <vw:Button x:Name="btnSave" Command="{Binding SaveCommand}" Height="50"  Width="160" LocalizableText="@RecipeSystem.View.Buttons.Save" Style="{DynamicResource FP_BlueButton_v2}"  Grid.Row="4" Margin="20,0,0,0" HorizontalAlignment="Left" AuthorizationRight="RecipeManagement"/>
+                                <vw:Button x:Name="btnCancel"  Text="Löschen" Height="50"  Width="160"  LocalizableText="@Tasten.Text13" HorizontalAlignment="Right" Command="{Binding CloseDialogCommand}"  Style="{DynamicResource FP_RedButton_v2}" Grid.Row="4" Margin="0,0,20,0" AuthorizationRight="RecipeManagement"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Border>
+                <vw:TextBlock LocalizableText="@RecipeSystem.View.Grid.Text36" Margin="10,10,97,10" FontSize="24" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+    </Grid>
+</vw:View>
